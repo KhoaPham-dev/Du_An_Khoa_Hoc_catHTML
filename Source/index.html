@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="reset.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <ul class="wb ul">
+        <li>
+          <a
+            id="nav-collapse"
+            class="mb nav-collapse"
+            href="javascript:void(0);"
+            ><span>☰</span></a
+          >
+        </li>
+        <li><a href="">KHÓA HỌC</a></li>
+        <li><a href="">ỨNG DỤNG</a></li>
+        <li class="login">
+          <a href="">ĐĂNG NHẬP</a>
+          <img class="login__img" src="/assets/img/user.png" alt="" />
+        </li>
+        <li class="search">
+          <img class="search__img" src="/assets/img/search.svg" alt="" />
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Tìm kiếm với DAVID FC"
+          />
+        </li>
+        <li>
+          <div class="flag">
+            <a href="" class="flag__a"
+              ><img
+                class="flag__img flag__img--vn"
+                src="/assets/img/vn_flag.png"
+                alt=""
+            /></a>
+            <a href="" class="flag__a"
+              ><img class="flag__img" src="/assets/img/uk_flag.png" alt=""
+            /></a>
+          </div>
+        </li>
+      </ul>
+      <!-- MOBILE -->
+      <ul class="mb ul">
+        <li><a href="">KHÓA HỌC</a></li>
+        <li><a href="">ỨNG DỤNG</a></li>
+        <li class="login">
+          <a href="">ĐĂNG NHẬP</a>
+          <img class="login__img" src="/assets/img/user.png" alt="" />
+        </li>
+      </ul>
+      <!-- MOBILE END -->
+    </nav>
+    <header>
+      <section class="slider-header">
+        <div class="mySlides fade">
+          <img
+            class="slider-header__banner"
+            src="/assets/img/banner1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            class="slider-header__banner"
+            src="/assets/img/banner2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            class="slider-header__banner"
+            src="/assets/img/banner3.jpg"
+            alt=""
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+      <menu class="menu-container">
+        <a class="btn-home" href=""
+          ><img class="btn-home__img" src="/assets/img/home.svg" alt=""
+        /></a>
+        <ul class="menu">
+          <li class="menu__li">
+            <a href="">Khóa học</a>
+          </li>
+          <li class="menu__li">
+            <a href="">Ứng dụng</a>
+          </li>
+          <li class="menu__li">
+            <a href="">Dịch vụ</a>
+          </li>
+          <li class="menu__li">
+            <a href="">Việc làm</a>
+          </li>
+
+          <li class="menu__li">
+            <a href="">Liên hệ</a>
+          </li>
+        </ul>
+        <a id="menu-collapse" class="menu-collapse" href="javascript:void(0);"
+          ><span>☰</span></a
+        >
+      </menu>
+      <div class="below-menu">
+        <div class="inner-1st">
+          <a class="inner-1st__news" href="">Tin mới</a>
+        </div>
+        <ul class="inner-2nd">
+          <li>
+            <a class="inner-2nd__post" href=""
+              >Thủ thuật kết chuyển thuế GTGT</a
+            >
+          </li>
+          <li>
+            <a class="inner-2nd__post" href=""
+              >Tìm hiểu về thuế và giải pháp tối ưu thuế phải nộp</a
+            >
+          </li>
+        </ul>
+        <div class="inner-space"></div>
+      </div>
+    </header>
+    <section class="section section--1st">
+      <div class="section--1st-left">
+        <h1 class="section__h1">VẬN HÀNH & QUẢN TRỊ DOANH NGHIỆP BÀI BẢN</h1>
+        <p>
+          DAVID PC thiết lập những chuyên đề huấn luyện phù hợp với từng loại
+          hình doanh nghiệp. Setup toàn bộ cơ chế vận hành nhằm thúc đẩy phát
+          triển chiến lược, đo lường rủi ro... Xây dựng biểu mẫu phù hợp cho
+          doanh nghiệp theo từng phòng ban (tài chính kế toán, kinh doanh, nhân
+          sự,...) <br />
+          Nhanh gọn - hiệu quả - tiết kiệm chi phí.
+        </p>
+        <div><button>Xem ngay</button></div>
+      </div>
+      <div class="section--1st-right">
+        <img src="/assets/img/hp1.png" alt="" />
+      </div>
+    </section>
+    <section class="section section--2nd">
+      <h1 class="section__h1">CÓ PHẢI DOANH NGHIỆP CỦA BẠN ĐANG GẶP VẤN ĐỀ?</h1>
+      <div class="list">
+        <ul class="list__ul list__ul--left">
+          <li>
+            <div class="list-style-type-cus">
+              <span>1</span>
+              <div></div>
+            </div>
+            <p class="list__p">
+              CEO không có kiến thức về tài chính và thuế? Lo lắng khi đối diện
+              với thanh tra thuế?
+            </p>
+          </li>
+          <li>
+            <div class="list-style-type-cus">
+              <span>2</span>
+              <div></div>
+            </div>
+            <p class="list__p">
+              Hệ thống quản lý kém, nhân viên làm việc không hiệu quả, báo cáo
+              thiếu trước hụt sau?
+            </p>
+          </li>
+          <li>
+            <div class="list-style-type-cus">
+              <span>3</span>
+              <div></div>
+            </div>
+            <p class="list__p">
+              Quản lý dòng tiền chưa chặt chẽ, định hướng đầu tư còn mập mờ?
+            </p>
+          </li>
+        </ul>
+        <ul class="list__ul list__ul--right">
+          <li>
+            <div class="list-style-type-cus">
+              <span>4</span>
+              <div></div>
+            </div>
+            <p class="list__p">
+              Làm kế toán nhưng không tự tin? Giải trình không được, xử lý vấn
+              đề không triệt để?
+            </p>
+          </li>
+          <li>
+            <div class="list-style-type-cus">
+              <span>5</span>
+              <div></div>
+            </div>
+            <p class="list__p">
+              Kế toán không vững nghiệp vụ chuyên môn dẫn đến lỗ hổng "khổng lồ"
+              về thuế
+            </p>
+          </li>
+          <li>
+            <div class="list-style-type-cus">
+              <span>6</span>
+              <div></div>
+            </div>
+            <p class="list__p">
+              Hàng tồn kho không kiểm soát được, không cung cấp báo cáo kịp
+              thời?
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section--3rd">
+      <h1 class="section__h1">KHÓA HỌC DÀNH CHO NHÀ QUẢN LÝ VÀ KẾ TOÁN</h1>
+      <div class="slider-btn--2">
+        <div>
+          <div class="slider-btn--2__div slider-btn--2__div--left"></div>
+        </div>
+        <div>
+          <div class="slider-btn--2__div slider-btn--2__div--right"></div>
+        </div>
+      </div>
+      <div class="list">
+        <ul class="list__ul list__ul--2">
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="image">
+      <img class="image__hp3" src="/assets/img/hp3.png" alt="" />
+    </section>
+    <section class="section section--4th">
+      <h1 class="section__h1">
+        ỨNG DỤNG KẾ TOÁN & QUẢN LÝ TRONG TỪNG LĨNH VỰC NGÀNH NGHỀ
+      </h1>
+      <div class="slider-btn--2">
+        <div>
+          <div class="slider-btn--2__div slider-btn--2__div--left"></div>
+        </div>
+        <div>
+          <div class="slider-btn--2__div slider-btn--2__div--right"></div>
+        </div>
+      </div>
+      <div class="list">
+        <ul class="list__ul list__ul--2">
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+          <li class="list__li list__li--2">
+            <img src="/assets/img/hp2.png" alt="" />
+            <p>
+              Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              <br />
+              Giúp cho doanh nghiệp hiểu rõ cơ cấu tài chính của mình và có định
+              hướng phát triển kinh doanh..
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section--5th">
+      <h1 class="section__h1">ĐỒNG HÀNH CÙNG +10.000 DOANH NGHIỆP</h1>
+      <div class="slider-content">
+        <div class="slider-btn--3">
+          <div class="slider-btn--3__div slider-btn--3__div--left"></div>
+        </div>
+        <div class="list">
+          <ul class="list__ul list__ul--3">
+            <li class="list__li list__li--3 fade slider-3">
+              <img src="/assets/img/hp5.png" alt="" />
+              <p>Hội nghị khách hàng</p>
+            </li>
+            <li class="list__li list__li--3 fade slider-3">
+              <img src="/assets/img/hp6.png" alt="" />
+              <p>Setup hệ thống chuỗi cửa hàng</p>
+            </li>
+            <li class="list__li list__li--3 fade slider-3">
+              <img src="/assets/img/hp7.png" alt="" />
+              <p>Thực tế tại lớp học</p>
+            </li>
+            <li class="list__li list__li--3 fade slider-3">
+              <img src="/assets/img/hp8.png" alt="" />
+              <p>Việc làm tài chính kế toán</p>
+            </li>
+          </ul>
+        </div>
+        <div class="slider-btn--3">
+          <div class="slider-btn--3__div slider-btn--3__div--right"></div>
+        </div>
+      </div>
+    </section>
+    <section class="image">
+      <img class="image__hp3" src="/assets/img/hp4.png" alt="" />
+    </section>
+    <section class="section section--6th">
+      <h1 class="section__h1">KHÓA HỌC SẮP KHAI GIẢNG & ƯU ĐÃI</h1>
+      <div class="slider-content">
+        <div class="slider-btn--3">
+          <div class="slider-btn--3__div slider-btn--3__div--left"></div>
+        </div>
+        <div class="list">
+          <ul class="list__ul list__ul--3">
+            <li class="list__li list__li--3">
+              <img src="/assets/img/hp2.png" alt="" />
+              <p>
+                Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              </p>
+            </li>
+            <li class="list__li list__li--3">
+              <img src="/assets/img/hp2.png" alt="" />
+              <p>
+                Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              </p>
+            </li>
+            <li class="list__li list__li--3">
+              <img src="/assets/img/hp2.png" alt="" />
+              <p>
+                Vận hành hệ thống quản trị và phân tích tài chính doanh nghiệp
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="slider-btn--3">
+          <div class="slider-btn--3__div slider-btn--3__div--right"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--7th">
+      <h1 class="section__h1">HỌC QUẢN TRỊ ĐỂ THÀNH CÔNG!</h1>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/videoseries/?playsinline=1&listType=playlist&list=PLLHvtKTxIRJ5myXVKPbMg7rCS9e64VzOP"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <footer>
+      <section class="section section--8th">
+        <div class="footer-head">
+          <div class="div1">
+            <a class="div1__a" href="">MẠNG LƯỚI CỦA</a>
+            <div class="div1__collaspe"></div>
+          </div>
+          <ul class="div2">
+            <li><a>Tin tức</a></li>
+            <li><a>Thư viện pháp luật</a></li>
+            <li><a>Tài chính quốc tế</a></li>
+            <li><a>Chứng khoán</a></li>
+            <li><a>Lao động - việc làm</a></li>
+          </ul>
+        </div>
+        <div class="footer-body">
+          <div class="row1">
+            <ul class="col">
+              <li><strong>CÔNG TY TNHH</strong></li>
+              <li class="address">
+                <div>Địa chỉ:</div>
+                <ul>
+                  <li>51/17</li>
+                  <li>P.</li>
+                  <li>Q.</li>
+                </ul>
+              </li>
+              <li>MST: 0314113290</li>
+              <li>Ngày cấp: 26/11/2016</li>
+              <li>Hotline:</li>
+              <li>Email:</li>
+            </ul>
+            <ul class="col">
+              <li>Chuyên mục hỏi đáp</li>
+              <li>Điều khoản</li>
+              <li>Hướng dẫn</li>
+              <li>Điều khoản thanh toán</li>
+            </ul>
+            <ul class="col">
+              <li>Lịch khai giảng</li>
+            </ul>
+            <div class="col">
+              <img src="/assets/img/hp9.png" alt="" />
+              <ul class="contact">
+                <li>
+                  <a href=""><img src="/assets/img/hp10.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/assets/img/hp11.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/assets/img/hp12.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/assets/img/hp13.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row2 slider-content">
+          <div class="slider-btn--3">
+            <div class="slider-btn--3__div slider-btn--3__div--left"></div>
+          </div>
+          <div class="list">
+            <ul class="list__ul list__ul--3">
+              <li class="list__li list__li--3">
+                <img src="/assets/img/hp14.png" alt="" />
+              </li>
+              <li class="list__li list__li--3">
+                <img src="/assets/img/hp15.png" alt="" />
+              </li>
+              <li class="list__li list__li--3">
+                <img src="/assets/img/hp16.png" alt="" />
+              </li>
+              <li class="list__li list__li--3">
+                <img src="/assets/img/hp17.png" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="slider-btn--3">
+            <div class="slider-btn--3__div slider-btn--3__div--right"></div>
+          </div>
+        </div>
+        <div class="btn">
+          <div class="collaspe-btn">
+            <div class="collaspe-btn__icon"></div>
+            <button class="collaspe-btn__btn">CHỌN KHÓA HỌC</button>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="/collapse.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
