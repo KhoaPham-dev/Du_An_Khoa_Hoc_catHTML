@@ -1,14 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 html {
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #023160;
 }
 body {
   width: 100%;
-}
-
-* {
-  font-family: Verdana, sans-serif;
-  font-size: 1em;
-  color: rgb(1, 53, 101);
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 a,
 h1,
@@ -16,11 +15,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
   text-decoration: none;
-  color: rgb(1, 53, 101);
-  font-family: "Rubik", sans-serif;
+  color: #023160;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
+}
+input::placeholder {
+  font-family: "Poppins", sans-serif;
 }
 p {
   line-height: 1.15rem;
@@ -39,13 +42,25 @@ iframe {
 /* NAVIGATION BAR */
 nav {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   position: fixed;
   top: 0;
-  max-height: 64px;
+  height: auto;
+  padding: 20px 0;
+  box-sizing: border-box;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0px 1px 10px;
+  transition: 0.2s;
 }
-
+.nav-no-shadow {
+  box-shadow: none !important;
+  padding: 10px 0;
+}
+/* MOBILE */
 .nav-collapse {
   flex: 1;
   text-align: center;
@@ -53,11 +68,11 @@ nav {
 .nav-collapse span {
   font-size: 1.5rem;
 }
+/* MOBILE END */
 nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 16px 0;
 }
 nav ul li {
   margin-left: 20px;
@@ -80,10 +95,15 @@ nav ul li {
 .search .search__input:focus {
   outline: none;
 }
+nav ul li a:hover {
+  color: #023160;
+}
 nav ul li a,
 nav ul li img {
   vertical-align: middle;
   color: black;
+  font-weight: 600;
+  transition: 0.3s;
 }
 .flag {
   margin-right: 4rem;
@@ -120,10 +140,31 @@ header {
   height: 100%;
 }
 
-.active {
-  background-color: #717171;
+/* slide left animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -180,7 +221,7 @@ header {
 .menu-container {
   width: 100%;
   display: flex;
-  background-color: rgb(1, 53, 101);
+  background-color: #023160;
   height: 38px;
   align-items: center;
 }
@@ -200,6 +241,14 @@ header {
   flex: 4;
   display: flex;
   justify-content: space-around;
+}
+.menu .menu__li a {
+  padding: 9px 5px;
+  transition: 0.3s;
+}
+.menu .menu__li a:hover {
+  background-color: rgb(236, 236, 236);
+  color: #023160;
 }
 .menu-collapse {
   flex: 2;
@@ -254,8 +303,9 @@ header {
 }
 .section .section__h1 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.1rem;
   padding: 30px 0;
+  line-height: 1.1em;
 }
 .section > * {
   padding: 0 10%;
@@ -284,15 +334,20 @@ header {
 .section--1st-left div {
   text-align: end;
 }
-.section--1st-left div button {
+.section--1st-left .section--1st-left__button {
   margin-right: 25%;
-  background-color: rgb(1, 53, 101);
-  border: none;
+  background-color: #023160;
+  border: #023160 1px solid;
   color: white;
   padding: 5px 9px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: normal;
   cursor: pointer;
+  transition: 0.3s;
+}
+.section--1st-left .section--1st-left__button:hover {
+  color: #023160;
+  background-color: white;
 }
 .section--1st-right {
   flex: 2;
@@ -334,7 +389,7 @@ header {
 .list-style-type-cus span {
   color: white;
   font-size: 1.3rem;
-  background-color: rgb(1, 53, 101);
+  background-color: #023160;
   padding: 5px 18px;
 }
 .list-style-type-cus div {
@@ -345,7 +400,7 @@ header {
   margin-left: -7px;
   margin-top: 1px;
   border-top: 5px solid transparent;
-  border-left: 10px solid rgb(1, 53, 101);
+  border-left: 10px solid #023160;
   border-bottom: 5px solid transparent;
   vertical-align: top;
 }
@@ -382,7 +437,7 @@ header {
 
 .list .list__ul--2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .list .list__li.list__li--2 {
@@ -497,7 +552,7 @@ footer > section.section--8th > * {
   padding: 0 12%;
 }
 .footer-head {
-  background-color: rgb(1, 53, 101);
+  background-color: #023160;
 }
 .section.section--8th .div1,
 .section.section--8th .div2 {
@@ -576,7 +631,7 @@ div.row1 .col:last-child {
 }
 
 .row2 {
-  max-height: 121px;
+  height: 90px;
   margin-bottom: 16px;
 }
 .row2 .slider-btn--3 {
@@ -607,16 +662,19 @@ div.row1 .col:last-child {
   flex: 1;
   text-align: center;
   padding: 5px;
+  height: 100%;
 }
 .row2 .list .list__li img {
-  width: 55%;
+  width: 60%;
   margin: 0;
+  height: 100%;
+  max-width: 140px;
 }
 .section--8th .btn {
   text-align: start;
 }
 .collaspe-btn {
-  background-color: rgb(1, 53, 101);
+  background-color: #023160;
   width: fit-content;
   padding: 2px 6px;
   border-radius: 3px;
@@ -661,6 +719,9 @@ div.row1 .col:last-child {
     font-size: 13px;
   }
   nav {
+    max-height: 64px;
+    padding: 0;
+    padding-top: 16px;
     transition: max-height 0.5s ease;
   }
   .mb {
@@ -689,12 +750,14 @@ div.row1 .col:last-child {
     opacity: 0;
     display: flex;
     justify-content: space-around;
-    transition: visibility 0.5s, opacity 0.5s ease;
+    padding: 0;
+    transition: visibility 0.5s, opacity 0.5s, padding 0.5s ease;
   }
   /* ANIMATION */
   nav ul.mb.ul.ul-active {
     visibility: visible;
     opacity: 1;
+    padding: 16px 0;
   }
   nav.nav-active {
     max-height: 200px;
@@ -733,6 +796,7 @@ div.row1 .col:last-child {
   }
   .menu li a {
     text-transform: capitalize;
+    font-size: 11px;
   }
   .menu-collapse {
     flex: unset;
