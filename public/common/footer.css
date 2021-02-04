@@ -1,0 +1,231 @@
+/* FOOTER */
+footer {
+  width: 100%;
+  padding-bottom: 30px;
+}
+footer > section.section--8th > * {
+  padding: 0 12%;
+}
+.footer-head {
+  background-color: #023160;
+}
+.section.section--8th .div1,
+.section.section--8th .div2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.div1 {
+  border-bottom: 1px solid white;
+  text-align: start;
+}
+.div1 .div1__a {
+  color: white;
+  padding-right: 6rem;
+}
+.div1 .div1__collaspe {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(-45deg);
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+.active-btn-div1__collaspe {
+  transform: rotate(135deg) !important;
+  transform-origin: center;
+}
+.wrapper {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  max-height: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.active-wrapper {
+  max-height: 500px;
+}
+
+.wrapper .item {
+  width: 19%;
+  height: auto;
+  padding: 10px;
+}
+.wrapper .item * {
+  line-height: 1.3rem;
+}
+.div2 {
+  display: flex;
+  justify-content: space-between;
+}
+.div2 li a {
+  color: white;
+}
+.footer-body {
+  background-color: rgb(245, 246, 248);
+}
+.row1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-height: 390px;
+}
+.col {
+  border-right: white 1px solid;
+  padding: 25px 8px;
+  flex: 1;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+.col > * {
+  margin-bottom: 8px;
+}
+.address {
+  display: flex;
+  justify-content: flex-start;
+}
+.address ul {
+  margin-left: 4px;
+}
+div.row1 .col:last-child {
+  border: none;
+}
+.col .contact {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.col .contact a {
+  margin-right: 5px;
+}
+.col .contact a img {
+  border-radius: 50px;
+}
+
+.row2 {
+  height: 90px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.row2 div {
+  height: 100%;
+}
+.section .slick-slide {
+  padding: 0px 25px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.section .slick-next {
+  right: 0px;
+}
+.section .slick-prev {
+  left: 0px;
+}
+.section .slick-prev,
+.section .slick-next {
+  width: unset;
+  height: unset;
+}
+.section .slick-next::before,
+.section .slick-prev::before {
+  font-size: 50px;
+  color: #023160;
+}
+.section .slick-next:hover,
+.section .slick-prev:hover {
+  opacity: 1;
+}
+.slick-slider {
+  margin-bottom: 0;
+}
+
+.slider-footer .slick-slide > img {
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section--8th .btn {
+  text-align: start;
+}
+.collaspe-btn {
+  background-color: #023160;
+  width: fit-content;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-align: center;
+}
+.collaspe-btn * {
+  cursor: pointer;
+}
+.collaspe-btn .collaspe-btn__icon {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin-right: -7px;
+}
+.collaspe-btn .collaspe-btn__btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+.collaspe-btn .collaspe-btn__btn:focus {
+  outline: none;
+}
+.collaspe-btn .collaspe-btn__btn::before {
+  content: "|";
+  margin-right: 8px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.795);
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 815px) {
+}
+@media only screen and (max-width: 600px) {
+  /* FOOTER */
+  footer > section.section--8th > * {
+    padding: 0 5%;
+  }
+  .row1 {
+    flex-wrap: wrap;
+    max-height: unset;
+  }
+  .row1 .col {
+    width: 40%;
+    flex: unset;
+  }
+  .row1 .col:nth-child(2),
+  .row1 .col:nth-child(4) {
+    border: none;
+  }
+  .wrapper .item {
+    width: 38%;
+  }
+  .row2 .slider-btn--3 {
+    max-width: 8%;
+  }
+  /* FOOTER END */
+}
+@media only screen and (max-width: 478px) {
+  .wrapper .item {
+    width: 80%;
+  }
+}

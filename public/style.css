@@ -1,0 +1,228 @@
+.section {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+.section .section__h1 {
+  font-weight: 500;
+  font-size: 2.1rem;
+  padding: 0 0 30px 0;
+  line-height: 1.1em;
+}
+.section > * {
+  padding: 0 10%;
+}
+.section--1st {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.section--1st-left {
+  flex: 3;
+  padding: 3% 4% 3% 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section--1st-left > * {
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.section--1st-left p {
+  word-break: break-word;
+}
+.section--1st-left div {
+  text-align: end;
+}
+.section--1st-left .section--1st-left__button {
+  margin-right: 25%;
+  background-color: #023160;
+  border: #023160 1px solid;
+  color: white;
+  padding: 5px 9px;
+  border-radius: 10px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.section--1st-left .section--1st-left__button:hover {
+  color: #023160;
+  background-color: white;
+}
+.section--1st-right {
+  flex: 2;
+  padding: 3% 9% 3% 4%;
+}
+.section--1st-right img {
+  width: 100%;
+}
+.section--2nd {
+  background-color: rgb(245, 246, 248);
+}
+
+.list {
+  display: flex;
+}
+.list .list__ul {
+  flex: 1;
+  text-align: start;
+  font-size: 1.4rem;
+}
+
+.list .list__ul--left {
+  padding: 2% 6% 2% 0%;
+}
+.list .list__ul--right {
+  padding: 2% 0% 2% 6%;
+}
+.list .list__ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.list-style-type-cus {
+  width: 69px;
+  padding: 6px 0;
+  text-align: center;
+  display: inline-block;
+}
+.list-style-type-cus span {
+  color: white;
+  font-size: 1.3rem;
+  background-color: #023160;
+  padding: 5px 18px;
+}
+.list-style-type-cus div {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0;
+  margin-left: -7px;
+  margin-top: 1px;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #023160;
+  border-bottom: 5px solid transparent;
+  vertical-align: top;
+}
+.list .list__p {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+/* SLIDER */
+
+.section .slick-slide {
+  padding: 25px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.section .slick-next {
+  right: 16px;
+}
+.section .slick-prev {
+  left: 16px;
+}
+.section .slick-prev,
+.section .slick-next {
+  width: unset;
+  height: unset;
+}
+.section .slick-next::before,
+.section .slick-prev::before {
+  font-size: 50px;
+  color: #023160;
+}
+.section .slick-next:hover,
+.section .slick-prev:hover {
+  opacity: 1;
+}
+.slick-slider {
+  margin-bottom: 0;
+}
+
+.slider-content1 .slick-slide > img,
+.slider-content2 .slick-slide > img,
+.slider-content4 .slick-slide > img {
+  margin-bottom: 10px;
+}
+.slider-content1 .slick-slide > p,
+.slider-content2 .slick-slide > p,
+.slider-content14 .slick-slide > p {
+  text-align: justify;
+}
+
+.image {
+  width: 100%;
+}
+.image__hp3 {
+  width: 100%;
+  max-height: 480px;
+  padding: 0;
+}
+.section--5th {
+  background-color: rgb(245, 246, 248);
+}
+.section--5th > * {
+  padding: 0 5%;
+}
+
+.slider-content3 .slick-slide > img {
+  border-radius: 50%;
+  width: 80%;
+  margin: 0 auto;
+}
+.slider-content3 .slick-slide > p {
+  margin-top: 16px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 815px) {
+}
+@media only screen and (max-width: 600px) {
+  /* CONTENT BODY*/
+  .section--1st,
+  .list,
+  .list .list__ul {
+    flex-direction: column;
+  }
+  section.section .list .list__ul li {
+    width: 100%;
+    flex: unset;
+  }
+  .section--1st-left {
+    flex: unset;
+    padding: 5%;
+  }
+  .section--1st-right {
+    flex: unset;
+    padding: 5%;
+  }
+  .section > * {
+    padding: 0 5%;
+  }
+  .section .image__hp3 {
+    padding: 0;
+  }
+  iframe {
+    padding: 0 5% !important;
+    width: unset !important;
+  }
+  .section .section__h1 {
+    padding: 30px 5%;
+  }
+  .list .list__ul {
+    padding: 0;
+  }
+  .slider-content .list .list__ul .list__li {
+    display: none;
+  }
+  .slider-content .list .list__ul .list__li:first-child {
+    display: inline-block;
+  }
+  /* CONTENT BODY END */
+}
+@media only screen and (max-width: 478px) {
+}
