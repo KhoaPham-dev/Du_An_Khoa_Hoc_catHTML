@@ -1,6 +1,6 @@
 $(".slider-content1").slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -8,7 +8,7 @@ $(".slider-content1").slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 815,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -25,7 +25,7 @@ $(".slider-content1").slick({
 });
 $(".slider-content2").slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -33,7 +33,7 @@ $(".slider-content2").slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 815,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -50,15 +50,15 @@ $(".slider-content2").slick({
 });
 $(".slider-content3").slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
-  autoplay: true,
-  autoplaySpeed: 2000,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 815,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -75,7 +75,7 @@ $(".slider-content3").slick({
 });
 $(".slider-content4").slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -83,7 +83,7 @@ $(".slider-content4").slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 815,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,

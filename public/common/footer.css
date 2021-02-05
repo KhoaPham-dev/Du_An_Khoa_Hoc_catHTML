@@ -123,37 +123,37 @@ div.row1 .col:last-child {
 .row2 div {
   height: 100%;
 }
-.section .slick-slide {
+.section .row2 .slick-slide {
   padding: 0px 25px;
   box-sizing: border-box;
   outline: none;
 }
 
-.section .slick-next {
+.section .row2 .slick-next {
   right: 0px;
 }
-.section .slick-prev {
+.section .row2 .slick-prev {
   left: 0px;
 }
-.section .slick-prev,
-.section .slick-next {
+.section .row2 .slick-prev,
+.section .row2 .slick-next {
   width: unset;
   height: unset;
 }
-.section .slick-next::before,
-.section .slick-prev::before {
+.section .row2 .slick-next::before,
+.section .row2 .slick-prev::before {
   font-size: 50px;
   color: #023160;
 }
-.section .slick-next:hover,
-.section .slick-prev:hover {
+.section .row2 .slick-next:hover,
+.section .row2 .slick-prev:hover {
   opacity: 1;
 }
-.slick-slider {
+.row2 .slick-slider {
   margin-bottom: 0;
 }
 
-.slider-footer .slick-slide > img {
+.row2 .slider-footer .slick-slide > img {
   margin-bottom: 0;
   width: 100%;
   height: 100%;

@@ -16,6 +16,8 @@ body {
   animation-duration: 1.5s;
   background-color: aliceblue;
   overflow: hidden;
+  height: unset;
+  font-family: "Poppins", sans-serif;
 }
 body > *:not(#nav) {
   width: 85% !important;
