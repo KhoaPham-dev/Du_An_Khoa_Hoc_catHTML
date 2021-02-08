@@ -5,7 +5,7 @@ $(".slider-content1").slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2500,
   responsive: [
     {
       breakpoint: 815,
@@ -19,6 +19,7 @@ $(".slider-content1").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
       },
     },
   ],
@@ -30,7 +31,7 @@ $(".slider-content2").slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2500,
   responsive: [
     {
       breakpoint: 815,
@@ -44,6 +45,7 @@ $(".slider-content2").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
       },
     },
   ],
@@ -55,7 +57,7 @@ $(".slider-content3").slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2500,
   responsive: [
     {
       breakpoint: 815,
@@ -69,6 +71,7 @@ $(".slider-content3").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
       },
     },
   ],
@@ -80,7 +83,7 @@ $(".slider-content4").slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2500,
   responsive: [
     {
       breakpoint: 815,
@@ -94,6 +97,59 @@ $(".slider-content4").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
+      },
+    },
+  ],
+});
+$(".slider-content5").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  responsive: [
+    {
+      breakpoint: 815,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+      },
+    },
+  ],
+});
+$(".slider-content6").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  responsive: [
+    {
+      breakpoint: 815,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
       },
     },
   ],

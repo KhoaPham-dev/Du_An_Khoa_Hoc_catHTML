@@ -1,14 +1,4 @@
 window.addEventListener("load", function () {
-  // collapse
-  document
-    .getElementById("div1__collaspe")
-    .addEventListener("click", function (e) {
-      document.getElementById("wrapper").classList.toggle("active-wrapper");
-      document
-        .getElementById("btn-div1__collaspe")
-        .classList.toggle("active-btn-div1__collaspe");
-    });
-
   // slideshow
   $(".slider-footer").slick({
     dots: true,

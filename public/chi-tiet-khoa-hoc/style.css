@@ -1,6 +1,5 @@
 .ctn-sn-1 {
   width: 100%;
-  border: 1px solid black;
 }
 
 .sn-1 {
@@ -18,7 +17,6 @@
   padding: 0 25px;
 }
 .sn .slick-slide {
-  padding: 25px;
   box-sizing: border-box;
   outline: none;
   text-align: center;
@@ -394,7 +392,6 @@ a {
 
 .ctn-sn-2 {
   width: 100%;
-  border: 1px solid black;
 }
 .ctn-sn-2 .sn-1 > * {
   padding: 15px 0;
@@ -666,7 +663,9 @@ a {
 .sn-4 .lst-crse .owl-item {
   width: 24%;
 }
-
+.sn-6 .slick-slide {
+  padding: 25px;
+}
 /* RESPONSIVE */
 @media only screen and (max-width: 860px) {
   body > *:not(#nav) {

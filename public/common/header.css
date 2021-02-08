@@ -31,7 +31,7 @@ header {
 }
 .slider-header .slick-next::before,
 .slider-header .slick-prev::before {
-  font-size: 50px;
+  font-size: 25px;
 }
 .slider-header .slick-next:hover,
 .slider-header .slick-prev:hover {
@@ -43,8 +43,8 @@ header {
 .all-menu {
   position: absolute;
   top: 38px;
-  left: 10%;
-  width: 78.7%;
+  left: 7.5%;
+  width: 83.2%;
   background-color: white;
   box-sizing: border-box;
   box-shadow: none;
@@ -92,11 +92,10 @@ header {
 .btn-home {
   flex: 1;
   text-align: end;
+  padding-right: 20px;
+  line-height: 0px;
 }
-.btn-home .btn-home__img {
-  margin-right: 8px;
-  width: 2rem;
-}
+
 .menu {
   flex: 4;
   display: flex;
@@ -105,12 +104,12 @@ header {
 }
 .menu .menu__li a {
   cursor: pointer;
-  padding: 9px 25px;
+  padding: 11px 25px;
   transition: 0.3s;
 }
 .menu-collapse .menu-collapse__a {
   cursor: pointer;
-  padding: 4.5px 25px;
+  padding: 8px 25px;
   line-height: 38px;
   transition: 0.3s;
 }
@@ -145,6 +144,7 @@ header {
 .inner-1st .inner-1st__news {
   font-weight: 600;
   color: black;
+  padding-right: 14px;
 }
 .below-menu marquee {
   flex: 6;
@@ -240,6 +240,7 @@ header {
   .inner-1st .inner-1st__news {
     font-weight: 600;
     color: black;
+    padding-right: 1px;
   }
   .inner-2nd {
     display: flex;
