@@ -6,6 +6,10 @@ for (let i = 0; i < btnsArr.length; i++) {
       e.classList.remove("active");
     });
     e.currentTarget.classList.toggle("active");
+    document.querySelectorAll(".para").forEach((e) => {
+      e.classList.remove("active");
+    });
+    document.querySelectorAll(".para")[i].classList.toggle("active");
   });
 }
 let ctrBtnsArr = document.querySelectorAll(".ctn-sn-2 .ctr .btns li");
@@ -16,5 +20,9 @@ for (let i = 0; i < ctrBtnsArr.length; i++) {
       e.classList.remove("active");
     });
     e.currentTarget.classList.toggle("active");
+    document.querySelectorAll(".lst-ctr").forEach((e) => {
+      e.classList.remove("active");
+    });
+    document.querySelectorAll(".lst-ctr ")[i].classList.toggle("active");
   });
 }

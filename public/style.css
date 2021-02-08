@@ -180,11 +180,20 @@ hr {
 }
 
 .slick-dots {
-  top: 8px;
-  right: 5%;
+  top: 4px;
+  right: 7%;
   width: fit-content;
   left: unset;
   bottom: unset;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .slick-dots li button {
@@ -193,6 +202,9 @@ hr {
   background-color: white;
   border: 1px solid #023160;
   border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 .slick-dots li.slick-active button {
   background-color: #023160;
@@ -621,6 +633,18 @@ a {
   .image__hp19 {
     width: 100%;
     padding: 5%;
+  }
+  .slick-dots {
+    top: 4px;
+    right: 5%;
+  }
+  .slick-dots li {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slick-dots li button {
+    font-size: 1.1rem;
   }
   /* CONTENT BODY END */
 }

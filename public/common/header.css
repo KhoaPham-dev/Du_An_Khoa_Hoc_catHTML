@@ -5,6 +5,7 @@ header {
   box-sizing: border-box;
 }
 .slider-header {
+  margin-top: 35px;
   height: 570px;
   margin-bottom: 0;
   overflow: hidden;
@@ -174,7 +175,7 @@ header {
   }
   .menu .menu__li a {
     cursor: pointer;
-    padding: 11px 25px;
+    padding: 14px 25px;
   }
   .menu-collapse .menu-collapse__a {
     padding: 7.5px 9px;
@@ -272,7 +273,7 @@ header {
     cursor: pointer;
     text-transform: capitalize;
     font-size: 11px;
-    padding: 12px 3px;
+    padding: 14px 3px;
   }
   .menu-collapse .menu-collapse__a {
     font-size: 1rem;

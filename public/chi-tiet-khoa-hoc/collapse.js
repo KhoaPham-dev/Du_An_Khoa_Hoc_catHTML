@@ -17,6 +17,13 @@ let lstCtr = document.querySelectorAll(".ctn-sn-2 .ctr .lst-ctr .li");
 for (let i = 0; i < lstCtr.length; i++) {
   const ele = lstCtr[i];
   ele.addEventListener("click", function (e) {
-    e.currentTarget.classList.toggle("active");
+    let currentTarget = e.target;
+    while (currentTarget.classList) {
+      if (currentTarget.classList.contains("chapter")) {
+        e.currentTarget.classList.toggle("active");
+        break;
+      }
+      currentTarget = currentTarget.parentNode;
+    }
   });
 }
