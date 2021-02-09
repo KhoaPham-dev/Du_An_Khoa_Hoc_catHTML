@@ -1,10 +1,12 @@
 /* FOOTER */
 footer {
   width: 100%;
-  padding-bottom: 30px;
+}
+footer > * {
+  padding-bottom: 0 !important;
 }
 footer > section.section--8th > * {
-  padding: 0 10%;
+  padding: 0 5.5%;
 }
 
 .footer-body {
@@ -53,7 +55,6 @@ footer > section.section--8th > * {
   margin: 0;
   line-height: 1.8rem;
 }
-
 /* RESPONSIVE */
 @media only screen and (max-width: 800px) {
   .col-1,
@@ -74,6 +75,15 @@ footer > section.section--8th > * {
     max-width: unset;
     width: 100%;
     flex: unset;
+  }
+  .mb.imgs {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mb.imgs img {
+    width: 28%;
+    height: 100%;
   }
   /* FOOTER END */
 }

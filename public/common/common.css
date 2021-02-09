@@ -22,8 +22,7 @@ body {
   height: unset;
   font-family: "Roboto", sans-serif;
 }
-body > *:not(#nav, #footer, .layer-head) {
-  width: 70% !important;
+body > *:not(#nav, #footer, header, .layer-head) {
   background-color: white;
 }
 body > * {

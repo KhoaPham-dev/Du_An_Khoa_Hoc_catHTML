@@ -8,14 +8,27 @@ for (let i = 0; i < barClArr.length; i++) {
     );
   });
 }
-document.getElementById("expand-nav").addEventListener("click", function (e) {
-  e.target.classList.toggle("expand-nav-on");
-  document.getElementById("sidebar").classList.toggle("sidebar-active");
-});
 
-let lstCtr = document.querySelectorAll(".ctn-sn-2 .ctr .lst-ctr .li");
+let lstCtr = document.querySelectorAll(".ctn-sn-2 .ctr .lst-ctr .syllabus .li");
 for (let i = 0; i < lstCtr.length; i++) {
   const ele = lstCtr[i];
+  ele.addEventListener("click", function (e) {
+    let currentTarget = e.target;
+    while (currentTarget.classList) {
+      if (currentTarget.classList.contains("chapter")) {
+        e.currentTarget.classList.toggle("active");
+        break;
+      }
+      currentTarget = currentTarget.parentNode;
+    }
+  });
+}
+
+let lstSituation = document.querySelectorAll(
+  ".ctn-sn-2 .ctr .lst-ctr .situation .li"
+);
+for (let i = 0; i < lstSituation.length; i++) {
+  const ele = lstSituation[i];
   ele.addEventListener("click", function (e) {
     let currentTarget = e.target;
     while (currentTarget.classList) {
