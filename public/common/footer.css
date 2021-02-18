@@ -76,12 +76,16 @@ footer > section.section--8th > * {
   justify-content: space-between;
   align-items: stretch;
   margin-top: 16px;
+  text-align: left;
 }
 .row1 h1 {
   color: white;
   font-size: 1.2rem;
 }
-
+.row1 p,
+.row1 i {
+  color: white;
+}
 .col-1 {
   width: 35%;
   border-right: 1px solid whitesmoke;

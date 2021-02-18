@@ -12,7 +12,9 @@ nav {
   align-items: stretch;
   justify-content: space-between;
 }
-
+nav * {
+  color: white;
+}
 nav > *:not(.mb.ul) {
   padding: 0 5.5%;
 }
@@ -342,7 +344,7 @@ nav ul li img {
     display: none;
   }
   .nav-top ul {
-    margin-left: 2%;
+    margin-left: 0%;
 
     margin-right: 0%;
   }
@@ -391,6 +393,9 @@ nav ul li img {
     display: inline-block;
     border-radius: 5px;
     border: 1px solid black;
+  }
+  .btn-cll a span {
+    color: black;
   }
   .language {
     width: unset;
