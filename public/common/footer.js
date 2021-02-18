@@ -23,4 +23,12 @@ window.addEventListener("load", function () {
       },
     ],
   });
+
+  // collapse
+  document
+    .getElementById("div1__collaspe")
+    .addEventListener("click", function (e) {
+      document.getElementById("div1__collaspe").classList.toggle("active");
+      document.getElementById("wrapper").classList.toggle("active");
+    });
 });
