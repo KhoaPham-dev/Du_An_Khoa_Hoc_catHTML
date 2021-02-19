@@ -26,6 +26,7 @@ textarea {
   -ms-user-select: text;
   -webkit-touch-callout: text;
 }
+
 a {
   cursor: pointer;
 }
@@ -33,19 +34,18 @@ a {
   width: 100%;
 }
 .sn {
-  max-height: 781px;
 }
 .sn--left {
   float: left;
   min-width: 457px;
   width: 76%;
-  height: 100%;
+  height: auto;
 }
 .sn--right {
   float: right;
   min-width: 145px;
   width: 24%;
-  height: 100%;
+  height: auto;
 }
 /* #endregion INIT SET */
 
@@ -59,9 +59,11 @@ a {
   display: inline-block;
 }
 .video-lesson {
+  max-height: 100%;
 }
-.video-lesson img {
-  max-height: 626px;
+.video-lesson video {
+  width: 100%;
+  height: auto;
 }
 
 .ctl-lesson {

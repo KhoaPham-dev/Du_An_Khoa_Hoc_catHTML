@@ -77,8 +77,9 @@ a {
   justify-content: center;
   align-items: center;
 }
-.video-lesson img {
-  max-height: 100%;
+.video-lesson video {
+  width: 100%;
+  height: auto;
 }
 
 .ctl-lesson {
@@ -118,7 +119,7 @@ a {
   height: 100%;
   padding: 6px 18px;
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 28%;
   background-position: center;
 }
 .tabs > div.active {
@@ -289,13 +290,15 @@ a {
 }
 
 .btn-discuss,
-.btn-situation {
+.btn-situation,
+.btn-eva {
   background-color: #023160;
   text-align: center;
   font-weight: 300;
   color: white;
   padding: 15px;
   border-radius: 0 0 10px 10px;
+  margin-top: 16px;
 }
 /* #endregion TAB discuss */
 
@@ -922,11 +925,11 @@ a {
 
   .btn-sidebar {
     display: block;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 145px;
     background-color: #0231609d;
-    padding: 6px 10px 4px 10px;
+    padding: 8px 10px 4px 10px;
     z-index: 999;
     border-radius: 3px 0 0 3px;
   }
@@ -951,6 +954,7 @@ a {
     min-width: 320px;
     background-color: white;
     transition: all 0.5s ease;
+    z-index: 99;
   }
   .sn--right.active {
     right: 0;
