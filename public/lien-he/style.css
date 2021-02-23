@@ -1,0 +1,254 @@
+.ctn-sn {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f4f8ff !important;
+}
+
+.ctn-sn > div {
+  padding: 0 13%;
+}
+.ctn-sn > div > * {
+  padding: 0 1%;
+}
+
+/* #region CTN SECTION 1 */
+
+.ctn-sn-1 > div > div > h1 {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+.ctn-sn-1 > div > div > h1 > span {
+  display: inline-block;
+  padding: 0.6em 0;
+  border-bottom: 3px solid #023160;
+}
+
+.ctn-sn-1 > div > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ctn-sn-1 > div > div:nth-child(2) > div {
+  flex: 1;
+}
+
+/* FORM */
+.form-ctn {
+  padding: 0;
+}
+.form-ctn form {
+  margin-right: 0.6em;
+  min-width: 320px;
+  background-color: #023160;
+  border-radius: 5px;
+  padding: 24px;
+  text-align: center;
+}
+.form-ctn form > h1 {
+  font-size: 1.7rem;
+  color: white;
+}
+.form-ctn input[type="text"] {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.form-ctn input[type="submit"] {
+  min-width: 147px;
+  background-color: #fdc500;
+  color: white !important;
+  padding: 16px 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.form-ctn .forgot-pass {
+  text-align: end;
+}
+
+.form-ctn form > div {
+  text-align: left;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+textarea {
+  border: none;
+  background-color: #e8ebee;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  padding: 8px;
+  float: left;
+  width: 100%;
+  min-height: 150px;
+  outline: none;
+  resize: none;
+}
+
+/* right */
+.ctn-sn-1 .sn-1--right {
+  margin-left: 0.6em;
+  background-color: white;
+  border-radius: 10px;
+}
+.ctn-sn-1 .sn-1--right > * {
+  padding: 0.5em 1em;
+}
+.ctn-sn-1 .sn-1--right > h1 {
+  font-size: 1.7rem;
+  color: #023160;
+  margin: 0;
+}
+.ctn-sn-1 .sn-1--right > div {
+  text-align: left;
+}
+.ctn-sn-1 .sn-1--right img {
+  width: 20px;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+.ctn-sn-1 .sn-1--right > img {
+  padding: 0.5em 0;
+  width: 100%;
+}
+.ctn-sn-1 .sn-1--right > div:last-child > img {
+  width: 25px;
+  margin-right: 0.5em;
+}
+/* #endregion CTN SECTION 1 */
+
+/* #region CTN SECTION 2 */
+.ctn-sn-2 {
+  padding-bottom: 42px;
+}
+.ctn-sn-2 > div > div > h1 {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+.ctn-sn-2 > div > div > h1 > span {
+  display: inline-block;
+  padding: 0.6em 0;
+  border-bottom: 3px solid #023160;
+}
+
+.ctn-sn-2 .slider {
+  padding-top: 8px;
+}
+
+.ctn-sn-2 .slick-slide {
+  padding: 30px;
+  box-sizing: border-box;
+  outline: none;
+}
+.ctn-sn-2 .slider:hover .slick-next,
+.ctn-sn-2 .slider:hover .slick-prev {
+  opacity: 1;
+}
+
+.ctn-sn-2 .slick-next,
+.ctn-sn-2 .slick-prev {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.ctn-sn-2 .slick-next {
+  right: 190px;
+}
+.ctn-sn-2 .slick-prev {
+  left: 190px;
+}
+.ctn-sn-2 .slick-prev,
+.ctn-sn-2 .slick-next {
+  width: unset;
+  height: unset;
+}
+.ctn-sn-2 .slick-next::before,
+.ctn-sn-2 .slick-prev::before {
+  font-size: 25px;
+  color: #ccc;
+}
+.ctn-sn-2 .slick-next:hover,
+.ctn-sn-2 .slick-prev:hover {
+  opacity: 1;
+}
+.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  bottom: unset;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  color: #023160;
+  background-color: white;
+  border: 1px solid #023160;
+  border-radius: 5px;
+  text-align: center;
+  width: 32px;
+  height: 0;
+}
+.slick-dots li.slick-active button {
+  background-color: #023160;
+  color: white;
+}
+
+.slick-dots li button::before {
+  content: none;
+}
+.slider-content1 .slick-slide > img {
+  border-radius: 50%;
+  width: 80%;
+  margin: 0 auto;
+}
+.slider-content1 .slick-slide > p {
+  margin: 0;
+  margin-top: 0.5em;
+}
+.slider-content1 .item > p:nth-child(2) {
+  font-weight: bold;
+}
+/* #endregion CTN SECTION 2 */
+
+/* RESPONSIVE */
+@media only screen and (max-width: 815px) {
+}
+@media only screen and (max-width: 600px) {
+  .ctn-sn {
+    background-color: white !important;
+  }
+  .ctn-sn > div {
+    padding: 0 1%;
+  }
+  .ctn-sn-1 > div > div:nth-child(2) > div {
+    flex: unset;
+    width: 100%;
+    margin: 1.5em 0;
+  }
+  .ctn-sn-1 > div > div:nth-child(2) > div:nth-child(2) {
+    border: 1px solid black;
+  }
+}
+@media only screen and (max-width: 478px) {
+}
