@@ -102,6 +102,7 @@ header {
   display: flex;
   justify-content: flex-start;
   min-width: 580px;
+  margin: 0;
 }
 .menu .menu__li a {
   cursor: pointer;
@@ -195,6 +196,7 @@ header {
   /* MENU */
   .menu-container {
     justify-content: space-between;
+    padding: 0 4%;
   }
   .btn-home {
     flex: unset;
