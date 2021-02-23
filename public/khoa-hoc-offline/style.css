@@ -82,7 +82,7 @@
 }
 .modal-header > div > div:first-child {
   height: 156px;
-  background-image: url("/assets/img/banner1.jpg");
+  background-image: url("./assets/img/banner1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

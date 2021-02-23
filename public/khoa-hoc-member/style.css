@@ -126,36 +126,36 @@ a {
   background-color: #023160;
 }
 .tabs > div:nth-child(1) {
-  background-image: url("../common/unicons/svg/menu.png");
+  background-image: url("./common/unicons/svg/menu.png");
 }
 .tabs > div.active:nth-child(1) {
-  background-image: url("../common/unicons/svg/menu-white.png");
+  background-image: url("./common/unicons/svg/menu-white.png");
 }
 .tabs > div:nth-child(2) {
-  background-image: url("../common/unicons/svg/chat.png");
+  background-image: url("./common/unicons/svg/chat.png");
 }
 .tabs > div.active:nth-child(2) {
-  background-image: url("../common/unicons/svg/chat-white.png");
+  background-image: url("./common/unicons/svg/chat-white.png");
 }
 
 .tabs > div:nth-child(3) {
-  background-image: url("../common/unicons/svg/question.png");
+  background-image: url("./common/unicons/svg/question.png");
 }
 .tabs > div.active:nth-child(3) {
-  background-image: url("../common/unicons/svg/question-white.png");
+  background-image: url("./common/unicons/svg/question-white.png");
 }
 
 .tabs > div:nth-child(4) {
-  background-image: url("../common/unicons/svg/evaluation.png");
+  background-image: url("./common/unicons/svg/evaluation.png");
 }
 .tabs > div.active:nth-child(4) {
-  background-image: url("../common/unicons/svg/evaluation-white.png");
+  background-image: url("./common/unicons/svg/evaluation-white.png");
 }
 .tabs > div:nth-child(5) {
-  background-image: url("../common/unicons/svg/document-rule.png");
+  background-image: url("./common/unicons/svg/document-rule.png");
 }
 .tabs > div.active:nth-child(5) {
-  background-image: url("../common/unicons/svg/document-rule-white.png");
+  background-image: url("./common/unicons/svg/document-rule-white.png");
 }
 .tabs .tab {
   cursor: pointer;

@@ -507,7 +507,7 @@ a {
 .video-bl .video a {
   position: relative;
   display: block;
-  background-image: url("/assets/img/hp3.png");
+  background-image: url("./assets/img/hp3.png");
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
