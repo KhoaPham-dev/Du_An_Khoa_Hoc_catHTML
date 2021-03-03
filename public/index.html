@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="./common/reset.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -17,12 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
     />
     <link
-      href="./common/unicons/css/unicons.css"
+      href="./css/unicons/css/unicons.css"
       type="text/css"
       rel="stylesheet"
     />
     <link
-      href="./common/semantic/semantic.min.css"
+      href="./css/semantic/semantic.min.css"
       type="text/css"
       rel="stylesheet"
     />
@@ -30,362 +29,609 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="./common/common.css" />
-    <link rel="stylesheet" type="text/css" href="./common/nav.css" />
-    <link rel="stylesheet" type="text/css" href="./common/header.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="./common/footer.css" />
+    <!-- Difference CSS  -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
-  <body>
-    <nav id="nav" w3-include-html="./common/nav.html"></nav>
-    <header w3-include-html="./common/header.html"></header>
-    <section class="section section--1st">
-      <div class="section--1st-left">
-        <h1 class="section__h1">VẬN HÀNH & QUẢN TRỊ DOANH NGHIỆP BÀI BẢN</h1>
-        <p>
-          DAVID PC thiết lập những chuyên đề huấn luyện phù hợp với từng loại
-          hình doanh nghiệp. Setup toàn bộ cơ chế vận hành nhằm thúc đẩy phát
-          triển chiến lược, đo lường rủi ro... Xây dựng biểu mẫu phù hợp cho
-          doanh nghiệp theo từng phòng ban (tài chính kế toán, kinh doanh, nhân
-          sự,...
-        </p>
-        <div><button class="section--1st-left__button">XEM THÊM</button></div>
+  <body class="homepage">
+    <nav id="nav">
+      <div class="nav-top">
+        <div class="contact">
+          <span
+            ><i style="color: #f7c24b" class="uil uil-phone"></i>(+88) 1990 6886</span
+          ><span style="margin: 0 5px 0 10px; color: #ccc">|</span>
+          <span>
+            <i style="color: #f7c24b" class="uil uil-envelope"></i>
+            agency@thememove.com</span
+          >
+        </div>
+        <div class="dn-dx">
+          <a class="dn-dx__login" href="">Login</a><span>|</span>
+          <a class="dn-dx__signup" href="">Register</a>
+        </div>
+        <ul>
+          <li>
+            <a href=""
+              ><img class="tw" src="./common/unicons/svg/twitter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="fb" src="./common/unicons/svg/facebook.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="ln" src="./common/unicons/svg/linkedin.png" alt=""
+            /></a>
+          </li>
+        </ul>
       </div>
-      <div class="section--1st-right">
+      <ul id="nav-ul" class="wb ul">
+        <li class="btn-cll">
+          <a id="nav-collapse" class="mb nav-collapse" href="javascript:void(0);"
+            ><span>☰</span></a
+          >
+        </li>
+        <li class="logo">
+          <a href="#"><img src="./assets/img/logo.png" alt="" /></a>
+        </li>
+        
+        <li class="search">
+          <div>
+            <i class="uil uil-search"></i>
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Bạn đang cần tìm khóa học..."
+            />
+          </div>
+        </li>
+      
+        <li class="links"><a class="homepage" href="">Trang chủ</a><a   class="training" href="">Đào tạo</a><a  class="ct" href="">Liên hệ</a></li>
+        </li>
+      
+        <li class="language">
+          <label class="switch">
+            <input class="switch__checkbox" type="checkbox" checked />
+            <span class="switch__slider round"></span>
+          </label>
+        </li>
+      </ul>
+      <!-- MOBILE -->
+      <ul class="mb ul">
+        <h1>MENU</h1>
+        <li class="homepage"><a href="">TIN TỨC</a></li>
+        <li class="training"><a href="">ĐÀO TẠO</a></li>
+        <li class="course"><a href="">KHÓA HỌC</a></li>
+        <li class="ct">
+          <a href="">LIÊN HỆ</a>
+        </li>
+        <div>
+          <a href="javascript:void(0);">ĐĂNG NHẬP</a>
+          <div>Tôi chưa có tài khoản?</div>
+        </div>
+      </ul>
+      <!-- MOBILE END -->      
+    </nav>
+    <header class="hd-header">
+      <section class="hd-slider-header">
+        <div class="">
+          <img
+            class="hd-slider-header__banner"
+            src="./assets/img/banner1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <img
+            class="hd-slider-header__banner"
+            src="./assets/img/banner2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <img
+            class="hd-slider-header__banner"
+            src="./assets/img/banner3.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <menu class="hd-menu-section">
+        <div class="hd-menu-container">
+          <a class="hd-btn-home" href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="32"
+              height="32"
+              viewBox="0 0 172 172"
+              style="fill: #000000"
+            >
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#ffffff">
+                  <path
+                    d="M86,13.89941l-73.67529,73.67529l7.60059,7.60058l6.94971,-6.94971v62.27442h48.375v-48.375h21.5v48.375h48.375v-62.27442l6.94971,6.94971l7.60058,-7.60058l-25.30029,-25.30029v-24.64942h-10.75v13.89941zM86,29.10059l48.375,48.375v62.27442h-26.875v-48.375h-43v48.375h-26.875v-62.27442z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <ul class="hd-menu">
+            <li class="hd-menu__li">
+              <a href="">Khóa học</a>
+            </li>
+    
+            <li class="hd-menu__li">
+              <a href="">Dịch vụ</a>
+            </li>
+            <li class="hd-menu__li">
+              <a href="">Tin tức</a>
+            </li>
+            <li class="hd-menu__li">
+              <a href="">Việc làm</a>
+            </li>
+          </ul>
+          <div
+            id="menu-collapse"
+            class="hd-menu-collapse"
+            href="javascript:void(0);"
+          >
+            <a id="menu-collapse-btn" class="hd-menu-collapse__a">☰</a>
+          </div>
+        </div>
+        <div id="all-menu" class="hd-all-menu" aria-expanded="true">
+          <div class="hd-col-menu">
+            <div class="hd-menu-group">
+              <div class="hd-group-head">
+                <a class="hd-group-head__title-group" href="/">TIN TỨC</a>
+              </div>
+              <div class="hd-row"></div>
+            </div>
+          </div>
+          <div class="hd-col-menu">
+            <div class="hd-menu-group">
+              <div class="hd-group-head">
+                <a
+                  class="hd-group-head__title-group"
+                  href="https://finance.vietstock.vn/"
+                  target="_blank"
+                  rel="noopener"
+                  >KHOA HOC</a
+                >
+              </div>
+              <div class="hd-row"></div>
+            </div>
+          </div>
+          <div class="hd-col-menu hd-col-menu-last">
+            <div class="hd-group-head">
+              <a class="hd-group-head__title-group" href="//dautruong.vietstock.vn"
+                >Đấu trường chứng khoán</a
+              >
+              <a
+                class="hd-group-head__title-group"
+                href="http://diendanchungkhoan.vn/"
+                >Diễn đàn</a
+              >
+              <a class="hd-group-head__title-group" href="//ir.vietstock.vn"
+                >IR AWARDS</a
+              >
+              <a class="hd-group-head__title-group" href="//pedia.vietstock.vn"
+                >VietstockPedia</a
+              >
+              <a
+                class="hd-group-head__title-group"
+                href="http://viectaichinh.vietstock.vn"
+                >Việc Tài chính</a
+              >
+              <a
+                class="hd-group-head__title-group"
+                href="http://thamdo.vietstock.vn"
+                >Thăm dò</a
+              >
+              <a class="hd-group-head__title-group" href="http://cnd.vietstock.vn"
+                >Cổng Nhà đất</a
+              >
+              <a class="hd-group-head__title-group" href="//dichvu.vietstock.vn"
+                >Dịch vụ</a
+              >
+              <a class="hd-group-head__title-group" href="/Gioi-thieu.htm"
+                >Về Vietstock</a
+              >
+            </div>
+          </div>
+        </div>
+      </menu>
+      <div class="hd-below-menu">
+        <div class="hd-inner-1st">
+          <a class="hd-inner-1st__news" href="">Tin mới</a>
+        </div>
+        <marquee direction="right">
+          <ul class="hd-inner-2nd">
+            <li>
+              <a class="hd-inner-2nd__post" href=""
+                >Tin tức về chứng khoán hôm nay có abc xyz</a
+              >
+            </li>
+            <li>
+              <a class="hd-inner-2nd__post" href=""
+                >Tìm hiểu về thuế và giải pháp tối ưu thuế phải nộp</a
+              >
+            </li>
+          </ul>
+        </marquee>
+      </div>
+    </header>
+    
+    <section class="homepage section section--1st">
+      <div class="homepage section--1st-left">
+        <h1 class="homepage section__h1">
+          VẬN HÀNH & QUẢN TRỊ DOANH NGHIỆP BÀI BẢN
+        </h1>
+        <p>
+          DAVID PC thiết lập những chuyên đề huấn luyện phù hợp với từng loại hình
+          doanh nghiệp. Setup toàn bộ cơ chế vận hành nhằm thúc đẩy phát triển chiến
+          lược, đo lường rủi ro... Xây dựng biểu mẫu phù hợp cho doanh nghiệp theo
+          từng phòng ban (tài chính kế toán, kinh doanh, nhân sự,...
+        </p>
+        <div>
+          <button class="homepage section--1st-left__button">XEM THÊM</button>
+        </div>
+      </div>
+      <div class="homepage section--1st-right">
         <img src="./assets/img/banner1.jpg" alt="" />
       </div>
     </section>
-    <section class="section section--2nd">
-      <h1 class="section__h1">DOANH NGHIỆP ĐANG CÓ PHẢN HỒI GÌ?</h1>
+    <section class="homepage section section--2nd">
+      <h1 class="homepage section__h1">DOANH NGHIỆP ĐANG CÓ PHẢN HỒI GÌ?</h1>
       <hr />
-      <div class="list">
-        <ul class="list__ul">
+      <div class="homepage list">
+        <ul class="homepage list__ul">
           <li>
-            <div class="list-style-type-cus">
+            <div class="homepage list-style-type-cus">
               <span>1</span>
               <div></div>
             </div>
-            <p class="list__p">
-              CEO không có kiến thức về tài chính và thuế? Lo lắng khi đối diện
-              với thanh tra thuế?
+            <p class="homepage list__p">
+              CEO không có kiến thức về tài chính và thuế? Lo lắng khi đối diện với
+              thanh tra thuế?
             </p>
           </li>
           <li>
-            <div class="list-style-type-cus">
+            <div class="homepage list-style-type-cus">
               <span>2</span>
               <div></div>
             </div>
-            <p class="list__p">
-              Hệ thống quản lý kém, nhân viên làm việc không hiệu quả, báo cáo
-              thiếu trước hụt sau?
+            <p class="homepage list__p">
+              Hệ thống quản lý kém, nhân viên làm việc không hiệu quả, báo cáo thiếu
+              trước hụt sau?
             </p>
           </li>
           <li>
-            <div class="list-style-type-cus">
+            <div class="homepage list-style-type-cus">
               <span>3</span>
               <div></div>
             </div>
-            <p class="list__p">
+            <p class="homepage list__p">
               Quản lý dòng tiền chưa chặt chẽ, định hướng đầu tư còn mập mờ?
             </p>
           </li>
           <li>
-            <div class="list-style-type-cus">
+            <div class="homepage list-style-type-cus">
               <span>4</span>
               <div></div>
             </div>
-            <p class="list__p">
-              Làm kế toán nhưng không tự tin? Giải trình không được, xử lý vấn
-              đề không triệt để?
+            <p class="homepage list__p">
+              Làm kế toán nhưng không tự tin? Giải trình không được, xử lý vấn đề
+              không triệt để?
             </p>
           </li>
           <li>
-            <div class="list-style-type-cus">
+            <div class="homepage list-style-type-cus">
               <span>5</span>
               <div></div>
             </div>
-            <p class="list__p">
-              Kế toán không vững nghiệp vụ chuyên môn dẫn đến lỗ hổng "khổng lồ"
-              về thuế
+            <p class="homepage list__p">
+              Kế toán không vững nghiệp vụ chuyên môn dẫn đến lỗ hổng "khổng lồ" về
+              thuế
             </p>
           </li>
           <li>
-            <div class="list-style-type-cus">
+            <div class="homepage list-style-type-cus">
               <span>6</span>
               <div></div>
             </div>
-            <p class="list__p">
-              Hàng tồn kho không kiểm soát được, không cung cấp báo cáo kịp
-              thời?
+            <p class="homepage list__p">
+              Hàng tồn kho không kiểm soát được, không cung cấp báo cáo kịp thời?
             </p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section section--3rd">
-      <h1 class="section__h1">KHÓA HỌC DÀNH CHO NHÀ QUẢN LÝ VÀ KẾ TOÁN</h1>
+    <section class="homepage section section--3rd">
+      <h1 class="homepage section__h1">KHÓA HỌC DÀNH CHO NHÀ QUẢN LÝ VÀ KẾ TOÁN</h1>
       <hr />
-      <div class="slider slider-content1">
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+      <div class="homepage slider slider-content1">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
@@ -393,279 +639,279 @@
         </div>
       </div>
     </section>
-    <section class="section image">
-      <img class="image__hp18" src="./assets/img/hp18.png" alt="" />
-      <img class="image__hp19" src="./assets/img/hp19.png" alt="" />
+    <section class="homepage section image">
+      <img class="homepage image__hp18" src="./assets/img/hp18.png" alt="" />
+      <img class="homepage image__hp19" src="./assets/img/hp19.png" alt="" />
     </section>
-    <section class="section image-2">
+    <section class="homepage section image-2">
       <img src="./assets/img/banner1.jpg" alt="" />
     </section>
-    <section class="section section--4th">
-      <h1 class="section__h1">
+    <section class="homepage section section--4th">
+      <h1 class="homepage section__h1">
         ỨNG DỤNG KẾ TOÁN & QUẢN LÝ TRONG TỪNG LĨNH VỰC NGÀNH NGHỀ
       </h1>
       <hr />
-      <div class="slider slider-content2">
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+      <div class="homepage slider slider-content2">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
@@ -673,16 +919,18 @@
         </div>
       </div>
     </section>
-    <section class="section section--5th">
-      <div class="section--5th-left">
-        <h1 class="section__h1">ĐỒNG HÀNH CÙNG +10.000 DOANH NGHIỆP</h1>
+    <section class="homepage section section--5th">
+      <div class="homepage section--5th-left">
+        <h1 class="homepage section__h1">ĐỒNG HÀNH CÙNG +10.000 DOANH NGHIỆP</h1>
         <p>
-          DAVID PC thiết lập những chuyên đề huấn luyện phù hợp với từng loại
-          hình doanh nghiệp.
+          DAVID PC thiết lập những chuyên đề huấn luyện phù hợp với từng loại hình
+          doanh nghiệp.
         </p>
-        <div><button class="section--5th-left__button">XEM THÊM</button></div>
+        <div>
+          <button class="homepage section--5th-left__button">XEM THÊM</button>
+        </div>
       </div>
-      <div class="section--5th-right">
+      <div class="homepage section--5th-right">
         <img src="./assets/img/hp20.png" alt="" />
         <img src="./assets/img/hp21.png" alt="" />
         <img src="./assets/img/hp22.png" alt="" />
@@ -695,274 +943,274 @@
         <img src="./assets/img/hp21.png" alt="" />
       </div>
     </section>
-    <section class="section image-2">
+    <section class="homepage section image-2">
       <img src="./assets/img/banner1.jpg" alt="" />
     </section>
-
-    <section class="section section--6th">
-      <h1 class="section__h1">KHÓA HỌC SẮP KHAI GIẢNG & ƯU ĐÃI</h1>
+    
+    <section class="homepage section section--6th">
+      <h1 class="homepage section__h1">KHÓA HỌC SẮP KHAI GIẢNG & ƯU ĐÃI</h1>
       <hr />
-      <div class="slider slider-content4">
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+      <div class="homepage slider slider-content4">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-item active">
-          <div class="item">
-            <div class="fcrse_1">
-              <a href="" class="fcrse_img">
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
                 <img
                   src="https://themezhub.net/learnup-demo/learnup/assets/img/co-5.jpg"
                   alt=""
                 />
-                <div class="prce142">
-                  <div style="font-weight: bold; color: #023160">
-                    1.500.000Đ
-                  </div>
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">1.500.000Đ</div>
                   <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
                     -600.000Đ
                   </div>
                 </div>
-                <div class="makh">#FINACIAL111</div>
+                <div class="homepage makh">#FINACIAL111</div>
               </a>
-
-              <div class="fcrse_content">
-                <h4 class="bl-title">
+    
+              <div class="homepage fcrse_content">
+                <h4 class="homepage bl-title">
                   <a href="">The Complete Financial Analyst Course 2020</a>
                 </h4>
-
-                <div class="vdtodt">
+    
+                <div class="homepage vdtodt">
                   <ul>
-                    <li><i class="uil uil-eye"></i>8582 Views</li>
-                    <li><i class="uil uil-stopwatch"></i>4h 59min</li>
+                    <li><i class="homepage uil uil-eye"></i>8582 Views</li>
+                    <li><i class="homepage uil uil-stopwatch"></i>4h 59min</li>
                     <li>
-                      <i style="color: orange" class="uil uil-star"></i>4.6
+                      <i style="color: orange" class="homepage uil uil-star"></i>4.6
                       Reviews
                     </li>
                   </ul>
                 </div>
-
-                <div class="auth1lnkprce">
-                  <div class="education_block_author">
-                    <div class="path-img">
+    
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <div class="homepage path-img">
                       <a href="instructor-detail.html" tabindex="-1"
                         ><img
                           src="https://themezhub.net/learnup-demo/learnup/assets/img/user-1.jpg"
-                          class="img-fluid"
+                          class="homepage img-fluid"
                           alt=""
                       /></a>
                     </div>
                     <h5><a href="" tabindex="-1">Robert Wilson</a></h5>
                   </div>
-                  <div class="shrt-cart-btn"><i class=""></i>54 lectures</div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>54 lectures
+                  </div>
                 </div>
               </div>
             </div>
@@ -970,40 +1218,40 @@
         </div>
       </div>
     </section>
-    <section class="section section--7th">
-      <h1 class="section__h1">KHÓA HỌC SẮP TỚI</h1>
+    <section class="homepage section section--7th">
+      <h1 class="homepage section__h1">KHÓA HỌC SẮP TỚI</h1>
       <hr />
-      <div class="video-container">
-        <div class="video-bl video-left">
-          <div class="video">
+      <div class="homepage video-container">
+        <div class="homepage video-bl video-left">
+          <div class="homepage video">
             <a href=""
-              ><div class="overlay"></div>
+              ><div class="homepage overlay"></div>
               <img
                 src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
                 alt=""
             /></a>
           </div>
         </div>
-        <div class="video-bl video-right">
-          <div class="video">
+        <div class="homepage video-bl video-right">
+          <div class="homepage video">
             <a href=""
-              ><div class="overlay"></div>
+              ><div class="homepage overlay"></div>
               <img
                 src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
                 alt=""
             /></a>
           </div>
-          <div class="video">
+          <div class="homepage video">
             <a href=""
-              ><div class="overlay"></div>
+              ><div class="homepage overlay"></div>
               <img
                 src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
                 alt=""
             /></a>
           </div>
-          <div class="video">
+          <div class="homepage video">
             <a href=""
-              ><div class="overlay"></div>
+              ><div class="homepage overlay"></div>
               <img
                 src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
                 alt=""
@@ -1012,72 +1260,220 @@
         </div>
       </div>
     </section>
-    <section class="section section--8th">
-      <h1 class="section__h1">FEEDBACK KHÁCH HÀNG</h1>
+    <section class="homepage section section--8th">
+      <h1 class="homepage section__h1">FEEDBACK KHÁCH HÀNG</h1>
       <hr />
-      <div class="slider slider-content6">
-        <div class="comment-bl active">
-          <div class="item">
+      <div class="homepage slider slider-content6">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh5.png" alt="" />
           </div>
         </div>
-        <div class="comment-bl active">
-          <div class="item">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh5.png" alt="" />
           </div>
         </div>
-        <div class="comment-bl active">
-          <div class="item">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh5.png" alt="" />
           </div>
         </div>
-        <div class="comment-bl active">
-          <div class="item">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh5.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="slider slider-content7">
-        <div class="comment-bl active">
-          <div class="item">
+      <div class="homepage slider slider-content7">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh6.png" alt="" />
           </div>
         </div>
-        <div class="comment-bl active">
-          <div class="item">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh6.png" alt="" />
           </div>
         </div>
-        <div class="comment-bl active">
-          <div class="item">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh6.png" alt="" />
           </div>
         </div>
-        <div class="comment-bl active">
-          <div class="item">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh6.png" alt="" />
           </div>
         </div>
-        <div class="comment-bl active">
-          <div class="item">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
             <img src="./assets/img/ctkh6.png" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <footer id="nav" w3-include-html="./common/footer.html"></footer>
+    
+    
+    <footer id="nav">
+      <section class="section section--8th">
+        <div class="footer-body">
+          <div class="div1">
+            <div id="div1__collaspe" class="div1__collaspe">
+              <a class="div1__a" href="javascript:void(0);">MẠNG LƯỚI CỦA</a>
+              <div class="div1__btn-collaspe">
+                <img src="https://img.icons8.com/metro/16/ffffff/chevron-down.png" />
+              </div>
+            </div>
+            <div id="wrapper" class="wrapper">
+              <div class="item">
+                <div class="title">Trụ sở chính</div>
+                <address>
+                  Địa chỉ: Tầng 6, 79 Lý Thường Kiệt, Q.Hoàn Kiếm, Hà Nội<br />
+                  Điện thoại: 84-24-37280921<br />
+                  Fax: 84-24-37280920<br />
+                  Email:
+                  <a href="mailto:contact@tvsi.com.vn">contact@tvsi.com.vn</a>
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">CN Hoàn Kiếm</div>
+                <address>
+                  Tầng 7 tòa nhà Grand, 30-32 Hòa Mã, Q.Hai Bà Trưng, Hà Nội<br />
+                  Tel: 024. 3933 2233<br />
+                  Fax: 024. 3933 5120<br />
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">CN Mỹ Đình</div>
+                <address>
+                  Tầng 2, tòa nhà AP, 87 Trần Thái Tông, Q.Cầu Giấy, Hà Nội<br />
+                  Tel: 024. 3792 5181 <br />
+                  Fax: 024. 3792 5180<br />
+                </address>
+              </div>
+      
+              <div class="item">
+                <div class="title">CN Tây Hồ</div>
+                <address>
+                  Tầng 1, 152 Thụy Khuê, Q.Tây Hồ, <br />Hà Nội<br />
+                  Tel: 024. 3728 6411<br />
+                  Fax: 024. 3728 6407<br />
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">CN Hải Phòng</div>
+                <address>
+                  Tầng 3 tòa nhà Akashi, số 10 Lê Hồng Phong, TP.Hải Phòng<br />
+                  Tel: 0225. 3757559<br />
+                  Fax: 0225. 3757560<br />
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">CN Đà Nẵng</div>
+                <address>
+                  115 Lê Lợi, Q.Hải Châu, Tp. Đà Nẵng<br />
+                  Tel: 0236. 3752282<br />
+                  Fax: 0236. 3752283<br />
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">CN Quy Nhơn</div>
+                <address>
+                  Số 1 Nguyễn Tất Thành, Tp.Quy Nhơn, Bình Định<br />
+                  Tel: 0256. 3818 840<br />
+                  Fax: 0256. 3818 820<br />
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">Phòng gD Daklak</div>
+                <address>
+                  Số 25B, Đường Y Ngông (nối dài), Phường Tân Tiến, Tp.Buôn Ma Thuột,
+                  Tỉnh ĐăkLăk<br />
+                  Tel: 0262. 3843 396<br />
+                  Fax: 0262. 3843 069<br />
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">CN Hồ Chí Minh</div>
+                <address>
+                  Tầng 3-4-5, 66 Phó Đức Chính, P.Nguyễn Thái Bình Q.1, TP.Hồ Chí
+                  Minh<br />
+                  Tel: 028. 3838 6868<br />
+                  Fax: 028. 3920 7542<br />
+                </address>
+              </div>
+      
+              <div class="item">
+                <div class="title">CN Ngọc Khánh</div>
+                <address>
+                  Tòa nhà Ngọc Khánh Plaza, Số 1 Phạm Huy Thông, Ba Đình, Hà Nội<br />
+                  Tel: 024. 3237 3090<br />
+                  Fax: 024. 3237 3092
+                </address>
+              </div>
+              <div class="item">
+                <div class="title">CN Mễ Trì</div>
+                <address>
+                  Tầng 3 - Tháp B, Tòa nhà Sông Đà, Số 1 Mễ Trì, Nam Từ Liêm, Hà
+                  Nội<br />
+                  Tel: 024. 3227 2901<br />
+                  Fax: 024. 3227 2905
+                </address>
+              </div>
+            </div>
+          </div>
+          <div class="row1">
+            <div class="col col-1">
+              <div class="cty">
+                <p><img class="lg-f" src="./assets/img/logo.png" alt="" /></p>
+                <p>
+                  CEO quản lý doanh nghiệp bài bản hơn, hoạch định chiến lược phát
+                  triển cụ thể hơn bằng biểu đồ phân tích tài chính
+                </p>
+                <p><i class="uil uil-envelope"></i> pvm26042000@gmail.com</p>
+                <p><i class="uil uil-phone-volume"></i> 0966.027.933</p>
+              </div>
+              <div class="social">
+                <img src="./assets/img/ft1.png" alt="" />
+                <img src="./assets/img/ft2.png" alt="" />
+                <img src="./assets/img/ft3.png" alt="" />
+              </div>
+            </div>
+            <div class="col col-2">
+              <h1>CHUYÊN MỤC</h1>
+              <p>Đào tạo kế toán</p>
+              <p>Đào tạo doanh nghiệp vừa</p>
+              <p>Đào tạo doanh nghiệp vừa</p>
+              <p>Đào tạo doanh nghiệp vừa</p>
+            </div>
+            <div class="col col-3">
+              <h1>TIN TỨC TÀI CHÍNH</h1>
+              <a>Xem lịch khai giảng</a>
+            </div>
+      
+            <div class="col col-4">
+              <div>
+                <img src="./assets/img/hp9.png" alt="" />
+              </div>
+      
+              <div class="imgs-f">
+                <img src="./assets/img/hp14.png" alt="" />
+                <img src="./assets/img/hp15.png" alt="" />
+                <img src="./assets/img/hp16.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"
     ></script>
-    <script src="./includeHTML.js"></script>
-    <script>
-      includeHTML();
-    </script>
-    <script src="./slideshow.js" defer></script>
-    <script src="./common/nav.js" defer></script>
-    <script src="./common/header.js" defer></script>
-    <script src="./common/footer.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </body>
 </html>
