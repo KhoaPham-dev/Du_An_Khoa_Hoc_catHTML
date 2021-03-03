@@ -488,3 +488,42 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
   });
 }
 //#endregion CHI TIET KHOA HOC
+
+//#region HOC ONLINE
+if (document.querySelectorAll("body.hoconline").length > 0) {
+  //Collapse Cau hoi tinh huong
+  let lstSituation = document.querySelectorAll(
+    ".hoconline.lst-ctr .situation .li"
+  );
+  for (let i = 0; i < lstSituation.length; i++) {
+    const ele = lstSituation[i];
+    ele.addEventListener("click", function (e) {
+      let currentTarget = e.target;
+      while (currentTarget.classList) {
+        if (currentTarget.classList.contains("chapter")) {
+          e.currentTarget.classList.toggle("active");
+          break;
+        }
+        currentTarget = currentTarget.parentNode;
+      }
+    });
+  }
+  //Switch Tab
+  let btnsArr = document.querySelectorAll(".hoconline.sn--right .tabs .tab");
+  for (let i = 0; i < btnsArr.length; i++) {
+    const ele = btnsArr[i];
+    ele.addEventListener("click", function (e) {
+      btnsArr.forEach((e) => {
+        e.classList.remove("active");
+      });
+      e.currentTarget.classList.toggle("active");
+      document.querySelectorAll(".hoconline.tab-ct").forEach((e) => {
+        e.classList.remove("active");
+      });
+      document
+        .querySelectorAll(".hoconline.tab-ct")
+        [i].classList.toggle("active");
+    });
+  }
+}
+//#endregion HOC ONLINE
