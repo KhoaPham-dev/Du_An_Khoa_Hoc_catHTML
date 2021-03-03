@@ -377,6 +377,7 @@ nav > ul {
 .search .search__input {
   border: none;
   background-color: transparent;
+  color: #023160;
 }
 .search .search__input::placeholder {
   color: #023160;
