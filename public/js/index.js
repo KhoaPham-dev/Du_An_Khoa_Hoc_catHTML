@@ -2,7 +2,7 @@
 if (document.querySelectorAll("#nav").length > 0) {
   //animation
   window.addEventListener("scroll", function (e) {
-    let nav = document.getElementById("nav-ul");
+    let nav = document.getElementById("nav");
     if (window.pageYOffset < nav.offsetHeight && window.screen.width > 550) {
       nav.classList.add("nav-ul-no-shadow");
     } else {
@@ -20,7 +20,7 @@ if (document.querySelectorAll("#nav").length > 0) {
 //#endregion NAV
 
 //#region HEADER
-if (document.querySelectorAll("hd-header").length > 0) {
+if (document.querySelectorAll(".hd-header").length > 0) {
   // collapse
   document
     .getElementById("menu-collapse-btn")
@@ -31,8 +31,8 @@ if (document.querySelectorAll("hd-header").length > 0) {
     });
   // slideshow
   $(".hd-slider-header").slick({
-    autoplay: true,
-    autoplaySpeed: 1800,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     focusOnSelect: false,
   });
 }
@@ -84,8 +84,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -110,8 +110,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -136,8 +136,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -162,8 +162,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -188,8 +188,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -214,8 +214,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -240,8 +240,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -388,8 +388,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed,: 2000,
     responsive: [
       {
         breakpoint: 815,
@@ -414,8 +414,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed,: 2000,
     responsive: [
       {
         breakpoint: 815,
@@ -440,8 +440,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed,: 2000,
     responsive: [
       {
         breakpoint: 815,
@@ -466,8 +466,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed,: 2000,
     responsive: [
       {
         breakpoint: 815,
