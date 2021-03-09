@@ -792,7 +792,7 @@ nav .hd-menu-container * {
     padding: 8px;
     text-align: center;
   }
-  nav ul.mb.ul h1 {
+  nav ul.mb.ul h2 {
     font-size: 28px;
     text-align: center;
     color: inherit;
@@ -1288,7 +1288,7 @@ nav .hd-menu-container * {
   text-align: left;
 }
 
-.hdns.breadcrumb-hd h1 {
+.hdns.breadcrumb-hd h2 {
   color: white;
   font-size: 2rem;
   margin-bottom: 0px;
@@ -1493,7 +1493,7 @@ footer .row1 {
   margin-top: 16px;
   text-align: left;
 }
-footer .row1 h1 {
+footer .row1 h2 {
   margin-bottom: 16px;
   color: white;
   font-weight: 600;
@@ -1595,7 +1595,7 @@ footer .imgs-f img {
     padding-right: 16px;
   }
 
-  footer .homepage.section--1st-left .homepage.section__h1 {
+  footer .homepage.section--1st-left .homepage.section__h2 {
     margin-bottom: 8px;
   }
 }
@@ -1638,7 +1638,7 @@ body.homepage {
   background-color: white;
 }
 
-.homepage.section .homepage.section__h1 {
+.homepage.section .homepage.section__h2 {
   font-weight: 600;
   font-size: 24px;
   padding: 0px 0px 16px 0;
@@ -1668,7 +1668,7 @@ body.homepage {
   flex-direction: column;
   justify-content: center;
 }
-.homepage.section--1st-left .homepage.section__h1 {
+.homepage.section--1st-left .homepage.section__h2 {
   margin-bottom: 8px;
   padding-right: 65px;
   line-height: 32px;
@@ -1823,7 +1823,7 @@ body.homepage {
 }
 
 .homepage.section .slick-slide {
-  padding: 8px;
+  margin: 8px;
   box-sizing: border-box;
   outline: none;
 }
@@ -2104,7 +2104,7 @@ a {
   justify-content: center;
   min-width: 327px;
 }
-.homepage.section--5th-left .homepage.section__h1 {
+.homepage.section--5th-left .homepage.section__h2 {
   margin-bottom: 8px;
   padding-right: 0;
   text-align: start;
@@ -2201,7 +2201,7 @@ a {
   background-position: 0 0;
 }
 .homepage.video.slick-slide {
-  padding: 8px;
+  margin: 8px;
 }
 .homepage.video img {
   width: 27%;
@@ -2286,6 +2286,10 @@ a {
   .homepage.section > * {
     padding: 0 5%;
   }
+  .homepage.section {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .homepage.section--1st,
   .homepage.list,
   .homepage.list .homepage.list__ul {
@@ -2339,7 +2343,7 @@ a {
     padding: 0 5% !important;
     width: unset !important;
   }
-  .homepage.section .homepage.section__h1 {
+  .homepage.section .homepage.section__h2 {
     padding: 10px 0;
   }
   .homepage.list .homepage.list__ul {
@@ -2415,7 +2419,7 @@ section.ctkh.sn {
   padding-right: 16px;
   float: left;
 }
-.ctkh.sn h1 {
+.ctkh.sn h2 {
   font-size: 20px;
   font-weight: 600;
   /* margin-bottom: 16px; */
@@ -2484,7 +2488,7 @@ section.ctkh.sn {
 .ctkh.para .ctkh.comment-bl {
   max-width: calc(100% - 8px);
 }
-.ctkh.paragraphs h1 {
+.ctkh.paragraphs h2 {
   padding: 16px;
   margin-bottom: 0;
   color: #3b5b8c;
@@ -3209,9 +3213,9 @@ section.ctkh.sn {
   position: relative;
   background-color: transparent !important;
 }
-.ctkh.sn-4 h1,
-.ctkh.sn-5 h1,
-.ctkh.sn-7 h1 {
+.ctkh.sn-4 h2,
+.ctkh.sn-5 h2,
+.ctkh.sn-7 h2 {
   text-align: start;
   margin-top: 0;
   margin-bottom: 0;
@@ -3242,7 +3246,7 @@ section.ctkh.sn {
   justify-content: space-around;
   padding-bottom: 8px !important;
 }
-.ctkh.sn-6 h1 {
+.ctkh.sn-6 h2 {
   padding-left: 0;
 }
 .ctkh.sn--6th-left {
@@ -3253,7 +3257,7 @@ section.ctkh.sn {
   justify-content: center;
   min-width: 327px;
 }
-.ctkh.sn--6th-left .ctkh.sn__h1 {
+.ctkh.sn--6th-left .ctkh.sn__h2 {
   margin-bottom: 8px;
   padding-right: 0;
   text-align: start;
@@ -3360,7 +3364,7 @@ section.ctkh.sn {
 }
 
 .ctkh.sn .slick-slide {
-  padding: 8px;
+  margin: 8px;
   box-sizing: border-box;
   outline: none;
 }
@@ -3641,7 +3645,7 @@ section.ctkh.sn {
 }
 
 @media only screen and (min-width: 1241px) {
-  .homepage.section .homepage.section__h1 {
+  .homepage.section .homepage.section__h2 {
     font-size: 28px !important;
   }
 }
@@ -3659,7 +3663,7 @@ section.ctkh.sn {
   .ctkh.ctn-sn-2 .ctkh.sidebar {
     padding-left: 5%;
   }
-  .ctkh.sn-2 h1 {
+  .ctkh.sn-2 h2 {
     font-size: 2rem;
   }
   .ctkh.sn-2 h2 {
@@ -3787,7 +3791,7 @@ section.ctkh.sn {
 /* #region INIT SET */
 :root body.hoconline,
 .hoconline a,
-.hoconline h1,
+.hoconline h2,
 .hoconline * {
   color: #023160c2;
 }
@@ -3955,7 +3959,7 @@ section.ctkh.sn {
 .hoconline.chaps .hoconline.chap {
   padding: 16px 0;
 }
-.hoconline.chap > h1 {
+.hoconline.chap > h2 {
   padding: 4px 8px;
   cursor: pointer;
   font-weight: bold;
@@ -4403,7 +4407,7 @@ input:checked + .hoconline.slider:before {
   .hoconline.chaps .hoconline.chap {
     padding: 16px 0;
   }
-  .hoconline.chap > h1 {
+  .hoconline.chap > h2 {
     padding: 4px 8px;
     cursor: pointer;
   }
@@ -4483,7 +4487,7 @@ body.tcnvcd > *:not(#nav, footer) {
 .tcnvcd.breadcrumb-ctn * {
   color: #023160;
 }
-.tcnvcd.breadcrumb-ctn > h1 {
+.tcnvcd.breadcrumb-ctn > h2 {
   font-size: 2rem;
   margin: 1rem 0;
 }
@@ -4605,7 +4609,7 @@ body.tcnvcd > *:not(#nav, footer) {
 }
 
 .tcnvcd.sn .slick-slide {
-  padding: 8px;
+  margin: 8px;
   box-sizing: border-box;
   outline: none;
 }
@@ -4705,7 +4709,7 @@ body.tcnvcd > *:not(#nav, footer) {
   padding: 8px;
   font-size: 0.8rem;
 }
-.tcnvcd.item h1 {
+.tcnvcd.item h2 {
   font-size: 1rem;
   font-weight: 700;
 }
@@ -4731,7 +4735,7 @@ body.tcnvcd > *:not(#nav, footer) {
 .tcnvcd.sn-4 {
   position: relative;
 }
-.tcnvcd.sn-4 h1 {
+.tcnvcd.sn-4 h2 {
   font-size: 1.7rem;
   text-align: start;
   margin-top: 0;
@@ -5017,7 +5021,7 @@ body.tcnvcd > *:not(#nav, footer) {
 .dstt.figure > img {
   border-radius: 5px;
 }
-.dstt.figure-caption > h1 {
+.dstt.figure-caption > h2 {
   font-size: 1.4rem;
   margin: 0.3em 0;
   font-weight: 500;
@@ -5078,7 +5082,7 @@ body.tcnvcd > *:not(#nav, footer) {
 }
 
 /* right */
-.dstt.sn-1--right h1 {
+.dstt.sn-1--right h2 {
   margin-top: 34px;
   margin-bottom: 0px;
   font-size: 1.5rem;
@@ -5127,14 +5131,14 @@ body.tcnvcd > *:not(#nav, footer) {
   padding: 4px;
 }
 
-.dstt.ctn-sn-2 .dstt.sn-1--left > div > div .dstt.figure-caption h1 {
+.dstt.ctn-sn-2 .dstt.sn-1--left > div > div .dstt.figure-caption h2 {
   font-size: 1rem;
   font-weight: 500;
 }
 .dstt.ctn-sn-2 .dstt.sn-1--left > div > div .dstt.figure-caption div {
   font-size: 0.8rem;
 }
-.dstt.ctn-sn-2 .dstt.sn-1--left > div > h1 {
+.dstt.ctn-sn-2 .dstt.sn-1--left > div > h2 {
   text-align: left;
   margin-left: 3%;
   font-size: 1.5rem;
@@ -5173,7 +5177,7 @@ body.tcnvcd > *:not(#nav, footer) {
   background: #023160;
   border-radius: 20px;
 }
-.dstt.ctn-sn-3 > div > div > h1 {
+.dstt.ctn-sn-3 > div > div > h2 {
   text-align: left;
   margin-left: 2%;
   font-size: 1.5rem;
@@ -5182,7 +5186,7 @@ body.tcnvcd > *:not(#nav, footer) {
   padding-top: 8px;
 }
 .dstt.ctn-sn-3 .slick-slide {
-  padding: 8px;
+  margin: 8px;
   box-sizing: border-box;
   outline: none;
 }
@@ -5446,7 +5450,7 @@ body.tcnvcd > *:not(#nav, footer) {
   background: #023160;
   border-radius: 20px;
 }
-.dstt.ctn-sn-4 > div > div > h1 {
+.dstt.ctn-sn-4 > div > div > h2 {
   text-align: left;
   margin-left: 2%;
   font-size: 1.5rem;
@@ -5477,7 +5481,7 @@ body.tcnvcd > *:not(#nav, footer) {
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1024px) {
-  .dstt.sn-1--right h1 {
+  .dstt.sn-1--right h2 {
     margin-top: 34px;
     margin-bottom: 0px;
     font-size: 1.5rem;
@@ -5499,7 +5503,7 @@ body.tcnvcd > *:not(#nav, footer) {
     background: #023160;
     border-radius: 20px;
   }
-  .dstt.ctn-sn-4 > div > div > h1 {
+  .dstt.ctn-sn-4 > div > div > h2 {
     text-align: left;
     margin-left: 3%;
     font-size: 1.5rem;
@@ -5510,7 +5514,7 @@ body.tcnvcd > *:not(#nav, footer) {
     padding: 0 1%;
   }
 
-  .dstt.figure-caption > h1 {
+  .dstt.figure-caption > h2 {
     font-size: 1.4rem;
     margin: 0.3em 0;
     font-weight: 500;
@@ -5604,7 +5608,7 @@ body.tcnvcd > *:not(#nav, footer) {
   /* right */
 
   /* #endregion CTN-SECTION 2 */
-  .dstt.ctn-sn-5 .dstt.sn-1--right h1 {
+  .dstt.ctn-sn-5 .dstt.sn-1--right h2 {
     margin-bottom: 16px;
   }
   .dstt.ctn-sn-5 .dstt.sn-1--right {
@@ -5615,7 +5619,7 @@ body.tcnvcd > *:not(#nav, footer) {
     padding: 0 !important;
   }
   /* #region CTN-SECTION 3 */
-  .dstt.ctn-sn-3 > div > div > h1 {
+  .dstt.ctn-sn-3 > div > div > h2 {
     text-align: left;
     margin-left: 3%;
     font-size: 1.5rem;
@@ -5645,7 +5649,7 @@ body.tcnvcd > *:not(#nav, footer) {
     background: #023160;
     border-radius: 20px;
   }
-  .dstt.ctn-sn-4 > div > div > h1 {
+  .dstt.ctn-sn-4 > div > div > h2 {
     text-align: left;
     margin-left: 4%;
     font-size: 1.5rem;
@@ -5812,7 +5816,7 @@ body.tcnvcd > *:not(#nav, footer) {
   padding: 15px 15px 15px 0;
 }
 
-.khoahoc.sn h1 {
+.khoahoc.sn h2 {
   font-size: 1.5rem;
   padding-left: 5px;
   line-height: 1.2em;
@@ -6074,8 +6078,8 @@ body.tcnvcd > *:not(#nav, footer) {
   width: 100%;
   padding: 15px 0;
 }
-.khoahoc.sn-2 h1,
-.khoahoc.sn-4 h1 {
+.khoahoc.sn-2 h2,
+.khoahoc.sn-4 h2 {
   text-align: center;
 }
 .khoahoc.sn-2 .khoahoc.lst-crse .khoahoc.owl-item,
@@ -6250,7 +6254,7 @@ body.tcnvcd > *:not(#nav, footer) {
 .ttct.figure > img {
   border-radius: 5px;
 }
-.ttct.figure-caption > h1 {
+.ttct.figure-caption > h2 {
   font-size: 1.4rem;
   margin: 0.3em 0;
   font-weight: 500;
@@ -6283,14 +6287,14 @@ body.tcnvcd > *:not(#nav, footer) {
   padding: 4px;
 }
 
-.ttct.ctn-sn-1 .ttct.sn-1--left > div > div .ttct.figure-caption h1 {
+.ttct.ctn-sn-1 .ttct.sn-1--left > div > div .ttct.figure-caption h2 {
   font-size: 1rem;
   font-weight: 500;
 }
 .ttct.ctn-sn-1 .ttct.sn-1--left > div > div .ttct.figure-caption div {
   font-size: 0.8rem;
 }
-.ttct.ctn-sn-1 .ttct.sn-1--left > div > h1 {
+.ttct.ctn-sn-1 .ttct.sn-1--left > div > h2 {
   text-align: left;
   margin-left: 3%;
   font-size: 1.5rem;
@@ -6357,7 +6361,7 @@ body.tcnvcd > *:not(#nav, footer) {
   font-weight: normal;
 }
 
-.ttct.sn-1--right h1 {
+.ttct.sn-1--right h2 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 1.5rem;
@@ -6421,7 +6425,7 @@ body.tcnvcd > *:not(#nav, footer) {
   background: #023160;
   border-radius: 20px;
 }
-.ttct.ctn-sn-3 > div > div > h1 {
+.ttct.ctn-sn-3 > div > div > h2 {
   text-align: left;
   margin-left: 2%;
   font-size: 1.5rem;
@@ -6430,7 +6434,7 @@ body.tcnvcd > *:not(#nav, footer) {
   padding-top: 8px;
 }
 .ttct.ctn-sn-3 .slick-slide {
-  padding: 8px;
+  margin: 8px;
   box-sizing: border-box;
   outline: none;
 }
@@ -6694,12 +6698,12 @@ body.tcnvcd > *:not(#nav, footer) {
   background: #023160;
   border-radius: 20px;
 }
-.ttct.ctn-sn-4 > div > div > h1 {
+.ttct.ctn-sn-4 > div > div > h2 {
   text-align: left;
   margin-left: 2%;
   font-size: 1.5rem;
 }
-.ttct.ctn-sn-4 .ttct.sn-1--right h1 {
+.ttct.ctn-sn-4 .ttct.sn-1--right h2 {
   margin-bottom: 8px;
   margin-top: 34px;
 }
@@ -6733,7 +6737,7 @@ body.tcnvcd > *:not(#nav, footer) {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
-  .ttct.ctn-sn-4 > div > .ttct.sn-1--right > h1 {
+  .ttct.ctn-sn-4 > div > .ttct.sn-1--right > h2 {
     text-align: center;
     margin-left: 2%;
     font-size: 1.5rem;
@@ -6754,7 +6758,7 @@ body.tcnvcd > *:not(#nav, footer) {
     background: #023160;
     border-radius: 20px;
   }
-  .ttct.ctn-sn-4 > div > div > h1 {
+  .ttct.ctn-sn-4 > div > div > h2 {
     text-align: left;
     margin-left: 3%;
     font-size: 1.5rem;
@@ -6765,7 +6769,7 @@ body.tcnvcd > *:not(#nav, footer) {
     padding: 0 1%;
   }
 
-  .ttct.figure-caption > h1 {
+  .ttct.figure-caption > h2 {
     font-size: 1.4rem;
     margin: 0.3em 0;
     font-weight: 500;
@@ -6798,7 +6802,7 @@ body.tcnvcd > *:not(#nav, footer) {
 
   /* #endregion SECTION 1 */
 
-  .ttct.ctn-sn-5 .ttct.sn-1--right h1 {
+  .ttct.ctn-sn-5 .ttct.sn-1--right h2 {
     margin-bottom: 16px;
   }
   .ttct.ctn-sn-5 .ttct.sn-1--right {
@@ -6809,7 +6813,7 @@ body.tcnvcd > *:not(#nav, footer) {
     padding: 0 !important;
   }
   /* #region CTN-SECTION 3 */
-  .ttct.ctn-sn-3 > div > div > h1 {
+  .ttct.ctn-sn-3 > div > div > h2 {
     text-align: left;
     margin-left: 3%;
     font-size: 1.5rem;
@@ -6838,7 +6842,7 @@ body.tcnvcd > *:not(#nav, footer) {
     background: #023160;
     border-radius: 20px;
   }
-  .ttct.ctn-sn-4 > div > div > h1 {
+  .ttct.ctn-sn-4 > div > div > h2 {
     text-align: left;
     margin-left: 4%;
     font-size: 1.5rem;
@@ -6946,7 +6950,7 @@ body.tcnvcd > *:not(#nav, footer) {
 .tttdm.figure > img {
   border-radius: 5px;
 }
-.tttdm.figure-caption > h1 {
+.tttdm.figure-caption > h2 {
   font-size: 1.4rem;
   margin: 0.3em 0;
   font-weight: 500;
@@ -6984,14 +6988,14 @@ body.tcnvcd > *:not(#nav, footer) {
   padding: 4px;
 }
 
-.tttdm.ctn-sn-1 .tttdm.sn-1--left > div > div .tttdm.figure-caption h1 {
+.tttdm.ctn-sn-1 .tttdm.sn-1--left > div > div .tttdm.figure-caption h2 {
   font-size: 1rem;
   font-weight: 500;
 }
 .tttdm.ctn-sn-1 .tttdm.sn-1--left > div > div .tttdm.figure-caption div {
   font-size: 0.8rem;
 }
-.tttdm.ctn-sn-1 .tttdm.sn-1--left > div > h1 {
+.tttdm.ctn-sn-1 .tttdm.sn-1--left > div > h2 {
   text-align: left;
   margin-left: 3%;
   font-size: 1.5rem;
@@ -7098,7 +7102,7 @@ body.tcnvcd > *:not(#nav, footer) {
   background: #023160;
   border-radius: 20px;
 }
-.tttdm.ctn-sn-3 > div > div > h1 {
+.tttdm.ctn-sn-3 > div > div > h2 {
   text-align: left;
   margin-left: 2%;
   font-size: 1.5rem;
@@ -7107,7 +7111,7 @@ body.tcnvcd > *:not(#nav, footer) {
   padding-top: 8px;
 }
 .tttdm.ctn-sn-3 .slick-slide {
-  padding: 8px;
+  margin: 8px;
   box-sizing: border-box;
   outline: none;
 }
@@ -7371,7 +7375,7 @@ body.tcnvcd > *:not(#nav, footer) {
   background: #023160;
   border-radius: 20px;
 }
-.tttdm.ctn-sn-4 > div > div > h1 {
+.tttdm.ctn-sn-4 > div > div > h2 {
   text-align: left;
   margin-left: 2%;
   font-size: 1.5rem;
@@ -7417,7 +7421,7 @@ body.tcnvcd > *:not(#nav, footer) {
     background: #023160;
     border-radius: 20px;
   }
-  .tttdm.ctn-sn-4 > div > div > h1 {
+  .tttdm.ctn-sn-4 > div > div > h2 {
     text-align: left;
     margin-left: 3%;
     font-size: 1.5rem;
@@ -7428,7 +7432,7 @@ body.tcnvcd > *:not(#nav, footer) {
     padding: 0 1%;
   }
 
-  .tttdm.figure-caption > h1 {
+  .tttdm.figure-caption > h2 {
     font-size: 1.4rem;
     margin: 0.3em 0;
     font-weight: 500;
@@ -7467,7 +7471,7 @@ body.tcnvcd > *:not(#nav, footer) {
 
   /* #endregion SECTION 1 */
 
-  .tttdm.ctn-sn-5 .tttdm.sn-1--right h1 {
+  .tttdm.ctn-sn-5 .tttdm.sn-1--right h2 {
     margin-bottom: 16px;
   }
   .tttdm.ctn-sn-5 .tttdm.sn-1--right {
@@ -7478,7 +7482,7 @@ body.tcnvcd > *:not(#nav, footer) {
     padding: 0 !important;
   }
   /* #region CTN-SECTION 3 */
-  .tttdm.ctn-sn-3 > div > div > h1 {
+  .tttdm.ctn-sn-3 > div > div > h2 {
     text-align: left;
     margin-left: 3%;
     font-size: 1.5rem;
@@ -7508,7 +7512,7 @@ body.tcnvcd > *:not(#nav, footer) {
     background: #023160;
     border-radius: 20px;
   }
-  .tttdm.ctn-sn-4 > div > div > h1 {
+  .tttdm.ctn-sn-4 > div > div > h2 {
     text-align: left;
     margin-left: 4%;
     font-size: 1.5rem;

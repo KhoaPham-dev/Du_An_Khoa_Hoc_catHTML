@@ -97,9 +97,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -123,9 +122,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -149,9 +147,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -175,9 +172,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -201,9 +197,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -227,9 +222,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -253,9 +247,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
