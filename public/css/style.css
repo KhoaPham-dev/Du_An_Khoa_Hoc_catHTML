@@ -197,6 +197,7 @@ input::placeholder {
 p {
   line-height: 1.45rem;
   word-spacing: 0.1rem;
+  font-size: 14px;
 }
 img {
   width: 100%;
@@ -240,6 +241,9 @@ section.homepage.section.section--3rd {
   }
   body > *:not(nav) {
     width: 100% !important;
+  }
+  p {
+    font-size: 1em;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -540,6 +544,18 @@ nav .hd-menu-container * {
   font-weight: 600;
 }
 /* RESPONSIVE */
+@media only screen and (max-width: 1270px) {
+  nav .ul .homepage,
+  nav .ul .training,
+  nav .ul .ct {
+    font-size: inherit;
+    padding: 0 8px;
+  }
+  nav .ul .links {
+    width: 50%;
+    margin-left: 2%;
+  }
+}
 @media only screen and (max-width: 1024px) {
   nav > *:not(.mb.ul) {
     width: 100%;
@@ -560,18 +576,6 @@ nav .hd-menu-container * {
     align-items: center;
   }
 }
-@media only screen and (max-width: 1270px) {
-  nav .ul .homepage,
-  nav .ul .training,
-  nav .ul .ct {
-    font-size: inherit;
-    padding: 0 8px;
-  }
-  nav .ul .links {
-    width: 50%;
-    margin-left: 2%;
-  }
-}
 @media only screen and (max-width: 1100px) {
   nav .search {
     margin-right: 8%;
@@ -590,7 +594,7 @@ nav .hd-menu-container * {
 
 @media only screen and (max-width: 850px) {
   nav * {
-    font-size: 11px;
+    font-size: 10px;
   }
   nav .search {
     height: 40px;
@@ -786,16 +790,26 @@ nav .hd-menu-container * {
   }
   nav ul.mb.ul > * {
     padding: 8px;
+    text-align: center;
   }
   nav ul.mb.ul h1 {
-    font-size: 1.5rem;
+    font-size: 28px;
     text-align: center;
     color: inherit;
     padding-top: 29px;
   }
+  nav ul.mb.ul > li {
+    border-radius: 3px;
+    text-align: center;
+    margin: 8px 0;
+  }
+  nav ul.mb.ul > li:hover {
+    background-color: #02378d;
+    border-bottom: none;
+  }
   nav ul.mb.ul > li > a {
     color: inherit;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: normal;
     line-height: 18.75px;
   }
@@ -1157,6 +1171,7 @@ nav .hd-menu-container * {
   /* SLIDER BANNER */
   .hd-header {
     height: auto;
+    font-size: 10px;
   }
 
   .hd-slider-header {
@@ -1184,7 +1199,7 @@ nav .hd-menu-container * {
   .hd-menu .hd-menu__li a {
     cursor: pointer;
     text-transform: capitalize;
-    font-size: 11px;
+    font-size: 10px;
     padding: 12px 16px;
   }
   .hd-menu-collapse .hd-menu-collapse__a {
@@ -1798,7 +1813,7 @@ body.homepage {
 }
 .homepage.list .homepage.list__p {
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 14px;
 }
 
 /* SLIDER */
@@ -1996,7 +2011,7 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0 20px 20px;
+  padding: 0 15px 10px;
 }
 
 .homepage.vdtodt ul li {
@@ -2004,6 +2019,7 @@ a {
   width: 33.333333%;
   font-size: 13px;
   color: #4a5874;
+  text-align: start;
 }
 
 .homepage.vdtodt ul li i {
@@ -2046,7 +2062,7 @@ a {
 .homepage.shrt-cart-btn {
   background: rgba(30, 173, 107, 0.13);
   color: #1ead6b;
-  padding: 12px 28px;
+  padding: 8px 28px;
   font-size: 13px;
   border-radius: 50px;
 }
@@ -2126,7 +2142,7 @@ a {
   align-items: center;
 }
 .homepage.section--5th-right img {
-  width: 20%;
+  width: 14%;
   padding: 5px;
   display: block;
 }
@@ -2260,6 +2276,10 @@ a {
 }
 
 @media only screen and (max-width: 815px) {
+  .homepage.list .homepage.list__p {
+    flex: 1;
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   /* CONTENT BODY*/
@@ -3227,7 +3247,7 @@ section.ctkh.sn {
 }
 .ctkh.sn--6th-left {
   flex: 2;
-  padding-right: 2%;
+  padding: 0 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3264,14 +3284,14 @@ section.ctkh.sn {
 }
 .ctkh.sn--6th-right {
   flex: 3;
-  padding-left: 2%;
+  padding: 0 1%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 .ctkh.sn--6th-right img {
-  width: 20%;
+  width: 14%;
   padding: 5px;
   display: block;
 }
@@ -3838,7 +3858,7 @@ section.ctkh.sn {
 
 .hoconline.ctl-lesson > p {
   color: #3b5b8c;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: normal;
   margin: 8px 0;
 }
@@ -4289,6 +4309,9 @@ input:checked + .hoconline.slider:before {
 @media only screen and (max-width: 1024px) {
   .hoconline.ctn-sn {
     width: 100%;
+  }
+  .hoconline.ctl-lesson > p {
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 600px) {

@@ -238,8 +238,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 8,
+    slidesToScroll: 8,
     // autoplay: true,
     // autoplaySpeed: 1800,
     responsive: [
