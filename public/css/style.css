@@ -238,7 +238,7 @@ section.homepage.section.section--3rd {
   html {
     font-size: 11px;
   }
-  body > *:not(#nav) {
+  body > *:not(nav) {
     width: 100% !important;
   }
 }
@@ -2359,6 +2359,10 @@ a {
 /* #endregion HOMEPAGE */
 
 /* #region CHI TIET KHOA HOC */
+.ctkh section.ctn-sn,
+.ctkh section.sn {
+  width: 1080px;
+}
 .ctkh.layer-head {
   position: absolute;
   top: 35px;
@@ -2368,10 +2372,10 @@ a {
   z-index: 0;
 }
 .ctkh.ctn-sn > * {
-  padding: 0 14%;
+  padding: 0;
 }
 .ctkh.sn {
-  padding: 8px 14%;
+  padding: 8px 0;
 }
 
 section.ctkh.sn {
@@ -2399,7 +2403,6 @@ section.ctkh.sn {
 }
 
 .ctkh.ctn-sn-2 {
-  width: 100%;
   position: relative;
   margin-top: 110px;
 }
@@ -3204,7 +3207,7 @@ section.ctkh.sn {
   position: absolute;
   width: 8px;
   height: 32px;
-  left: 14.8%;
+  left: 1%;
   top: 20px;
   background: #3b5b8c;
   border-radius: 20px;
@@ -3447,11 +3450,11 @@ section.ctkh.sn {
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
   -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
 }
-a {
+.ctkh a {
   color: #3b5b8c;
   text-decoration: none;
 }
-a {
+.ctkh a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -3605,16 +3608,15 @@ a {
 /* SLIDER END */
 /* RESPONSIVE */
 @media only screen and (max-width: 1100px) {
+  .ctkh section.ctn-sn,
+  .ctkh section.sn {
+    width: 99% !important;
+  }
   .ctkh.btn-buy {
     padding: 1rem 1rem;
   }
   .ctkh.bar-2 .ctkh.card {
     font-size: 0.8rem;
-  }
-}
-@media only screen and (max-width: 860px) {
-  body > *:not(#nav) {
-    width: 100% !important;
   }
 }
 
@@ -3795,7 +3797,7 @@ a {
   cursor: pointer;
 }
 .hoconline.ctn-sn {
-  width: 100%;
+  width: 1080px;
 }
 .hoconline.sn {
 }
@@ -4283,6 +4285,12 @@ input:checked + .hoconline.slider:before {
 /*#endregion MODE AUTO */
 
 /* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+  .hoconline.ctn-sn {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 600px) {
   html * {
     font-size: 13px;
@@ -4446,7 +4454,8 @@ body.tcnvcd > *:not(#nav, footer) {
 }
 .tcnvcd.breadcrumb-ctn {
   margin-top: 113px;
-  padding: 8px 14%;
+  padding: 8px 0;
+  width: 1080px;
 }
 .tcnvcd.breadcrumb-ctn * {
   color: #023160;
@@ -4456,7 +4465,8 @@ body.tcnvcd > *:not(#nav, footer) {
   margin: 1rem 0;
 }
 .tcnvcd.ctn-sn {
-  padding: 8px 14%;
+  padding: 8px 0;
+  width: 1080px;
 }
 
 .tcnvcd.nav-tabs {
@@ -4912,6 +4922,18 @@ body.tcnvcd > *:not(#nav, footer) {
 /* #endregion Pagnigation */
 
 /* #region RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+  .tcnvcd.ctn-sn {
+    padding: 8px 0;
+    width: 100%;
+  }
+  .tcnvcd.breadcrumb-ctn {
+    margin-top: 113px;
+    padding: 8px 0;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 760px) {
   .tcnvcd.ctn-sn {
     margin-top: 84px;
@@ -4952,13 +4974,13 @@ body.tcnvcd > *:not(#nav, footer) {
 
 /* #region DANH SACH TIN TUC */
 .dstt.ctn-sn {
-  width: 100%;
+  width: 1080px;
   text-align: center;
   padding: 15px 0;
 }
 
 .dstt.ctn-sn > div {
-  padding: 0 13%;
+  padding: 0;
 }
 .dstt.ctn-sn > div > * {
   padding: 0 1%;
@@ -5438,6 +5460,11 @@ body.tcnvcd > *:not(#nav, footer) {
     font-size: 1.5rem;
     text-align: center;
   }
+  .dstt.ctn-sn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
 }
 @media only screen and (max-width: 815px) {
   .dstt.ctn-sn-4 > div > div > span {
@@ -5648,7 +5675,7 @@ body.tcnvcd > *:not(#nav, footer) {
 
 /* #region KHOA HOC  */
 .khoahoc.ctn-sn-1 {
-  width: 100%;
+  width: 1080px;
 }
 
 /* SIDEBAR */
@@ -5680,7 +5707,7 @@ body.tcnvcd > *:not(#nav, footer) {
 
 .khoahoc.bar-content ul {
   width: 100%;
-  padding: 5px 5px;
+  padding: 5px 8px;
 }
 
 .khoahoc.bar-1 {
@@ -6007,7 +6034,7 @@ body.tcnvcd > *:not(#nav, footer) {
 }
 
 .khoahoc.ctn-sn-2 {
-  width: 100%;
+  width: 1080px;
 }
 .khoahoc.ctn-sn-2 .khoahoc.sn-1,
 .khoahoc.ctn-sn-2 .khoahoc.sn-3 {
@@ -6083,8 +6110,15 @@ body.tcnvcd > *:not(#nav, footer) {
 /* SLIDE SHOW END */
 
 /* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+  .khoahoc.ctn-sn-2,
+  .khoahoc.ctn-sn-1 {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 860px) {
-  body > *:not(#nav) {
+  body.khoahoc > *:not(#nav) {
     width: 100% !important;
   }
 }
@@ -6172,13 +6206,13 @@ body.tcnvcd > *:not(#nav, footer) {
 
 /* #region TIN TUC CHI TIET */
 .ttct.ctn-sn {
-  width: 100%;
+  width: 1080px;
   text-align: center;
   padding: 15px 0;
 }
 
 .ttct.ctn-sn > div {
-  padding: 0 13%;
+  padding: 0;
 }
 .ttct.ctn-sn > div > * {
   padding: 0 1%;
@@ -6681,6 +6715,11 @@ body.tcnvcd > *:not(#nav, footer) {
     margin-left: 2%;
     font-size: 1.5rem;
   }
+  .ttct.ctn-sn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
 }
 @media only screen and (max-width: 815px) {
   .ttct.ctn-sn-4 > div > div > span {
@@ -6864,13 +6903,13 @@ body.tcnvcd > *:not(#nav, footer) {
 
 /* #region TIN TUC THEO DANH MUC */
 .tttdm.ctn-sn {
-  width: 100%;
+  width: 1080px;
   text-align: center;
   padding: 15px 0;
 }
 
 .tttdm.ctn-sn > div {
-  padding: 0 13%;
+  padding: 0;
 }
 .tttdm.ctn-sn > div > * {
   padding: 0 1%;
@@ -7338,6 +7377,13 @@ body.tcnvcd > *:not(#nav, footer) {
 /* #endregion CTN-SECTION 4 */
 
 /* RESPONSIVE */
+@media only screen and (max-width: 1024px) {
+  .tttdm.ctn-sn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
 @media only screen and (max-width: 815px) {
   .tttdm.ctn-sn-4 > div > div > span {
     position: absolute;
