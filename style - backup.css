@@ -1434,7 +1434,7 @@ footer > section.section--8th > * {
 .homepage.section--7th {
   padding-bottom: 42px;
 }
-.homepage.section .homepage.section__h2 {
+.homepage.section .homepage.section__h1 {
   font-weight: 600;
   font-size: 1.4rem;
   padding: 0 20px 10px 0;
@@ -1460,7 +1460,7 @@ footer > section.section--8th > * {
   flex-direction: column;
   justify-content: center;
 }
-.homepage.section--1st-left .homepage.section__h2 {
+.homepage.section--1st-left .homepage.section__h1 {
   margin-bottom: 8px;
   padding-right: 0;
   text-align: start;
@@ -1849,7 +1849,7 @@ a {
   justify-content: center;
   min-width: 327px;
 }
-.homepage.section--5th-left .homepage.section__h2 {
+.homepage.section--5th-left .homepage.section__h1 {
   margin-bottom: 8px;
   padding-right: 0;
   text-align: start;
@@ -2038,7 +2038,7 @@ a {
     padding: 0 5% !important;
     width: unset !important;
   }
-  .homepage.section .homepage.section__h2 {
+  .homepage.section .homepage.section__h1 {
     padding: 10px 0;
   }
   .homepage.list .homepage.list__ul {
@@ -2946,7 +2946,7 @@ section.ctkh.sn {
   justify-content: center;
   min-width: 327px;
 }
-.ctkh.sn--6th-left .ctkh.sn__h2 {
+.ctkh.sn--6th-left .ctkh.sn__h1 {
   margin-bottom: 8px;
   padding-right: 0;
   text-align: start;
