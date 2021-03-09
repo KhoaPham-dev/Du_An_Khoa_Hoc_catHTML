@@ -648,3 +648,177 @@ if (document.querySelectorAll("body.dstt").length > 0) {
   });
 }
 //#endregion DANH SACH TIN TUC
+
+//#region KHOA HOC
+if (document.querySelectorAll("body.khoahoc").length > 0) {
+  //Collapse content in sidebar
+  let barClArr = document.querySelectorAll(".khoahoc.bar-1 .bar-content ul li");
+  for (let i = 0; i < barClArr.length; i++) {
+    barClArr[i].addEventListener("click", function (e) {
+      e.currentTarget.lastElementChild.classList.toggle("active-list-wrapper");
+      e.currentTarget.firstElementChild.lastElementChild.classList.toggle(
+        "active-collaspe-btn-bar"
+      );
+    });
+  }
+
+  document.getElementById("expand-nav").addEventListener("click", function (e) {
+    e.target.classList.toggle("expand-nav-on");
+    document.getElementById("sidebar").classList.toggle("sidebar-active");
+  });
+
+  //SLIDER
+  $(".khoahoc.slider-content1").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+}
+//#endregion KHOA HOC
+
+//#region TIN TUC CHI TIET
+if (document.querySelectorAll("body.ttct").length > 0) {
+  $(".ttct.slider-content4").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
+  });
+  $(".ttct.slider-1").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3.5,
+    slidesToScroll: 3,
+    centerMode: false,
+  });
+
+  $(".ttct.slider-2").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+}
+//#endregion TIN TUC CHI TIET
+
+//#region TIN TUC THEO DANH MUC
+if (document.querySelectorAll("body.tttdm").length > 0) {
+  //SLIDER
+  $(".tttdm.slider-content4").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
+  });
+  $(".tttdm.slider-1").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3.5,
+    slidesToScroll: 3,
+    centerMode: false,
+  });
+
+  $(".tttdm.slider-2").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+}
+//#endregion TIN TUC THEO DANH MUC
