@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  @include("layouts.head", ["title" => "Trang chủ"])
+  <body class="homepage">
+    @include("layouts.nav") @include("layouts.header")
+    <section class="homepage section section--1st">
+      <div class="homepage section--1st-left">
+        <span></span>
+        <h2 class="homepage section__h2">
+          VẬN HÀNH & QUẢN TRỊ DOANH NGHIỆP BÀI BẢN
+        </h2>
+        <hr style="margin-left: 0" />
+        <p>
+          DAVID PC thiết lập những chuyên đề huấn luyện phù hợp với từng loại
+          hình doanh nghiệp. Setup toàn bộ cơ chế vận hành nhằm thúc đẩy phát
+          triển chiến lược, đo lường rủi ro... Xây dựng biểu mẫu phù hợp cho
+          doanh nghiệp theo từng phòng ban (tài chính kế toán, kinh doanh, nhân
+          sự,...
+        </p>
+        <div>
+          <button class="homepage section--1st-left__button">XEM THÊM</button>
+        </div>
+      </div>
+      <div class="homepage section--1st-right">
+        <img src="./assets/img/banner1.jpg" alt="" />
+      </div>
+    </section>
+    <section class="homepage section section--2nd">
+      <h2 class="homepage section__h2">DOANH NGHIỆP ĐANG CÓ PHẢN HỒI GÌ?</h2>
+      <hr />
+      <div class="homepage list">
+        <ul class="homepage list__ul">
+          <li>
+            <div class="homepage list-style-type-cus">
+              <span>1</span>
+            </div>
+            <p class="homepage list__p">
+              CEO không có kiến thức về tài chính và thuế? Lo lắng khi đối diện
+              với thanh tra thuế?
+            </p>
+          </li>
+          <li>
+            <div class="homepage list-style-type-cus">
+              <span>2</span>
+            </div>
+            <p class="homepage list__p">
+              Hệ thống quản lý kém, nhân viên làm việc không hiệu quả, báo cáo
+              thiếu trước hụt sau?
+            </p>
+          </li>
+          <li>
+            <div class="homepage list-style-type-cus">
+              <span>3</span>
+            </div>
+            <p class="homepage list__p">
+              Quản lý dòng tiền chưa chặt chẽ, định hướng đầu tư còn mập mờ?
+            </p>
+          </li>
+          <li>
+            <div class="homepage list-style-type-cus">
+              <span>4</span>
+            </div>
+            <p class="homepage list__p">
+              Làm kế toán nhưng không tự tin? Giải trình không được, xử lý vấn
+              đề không triệt để?
+            </p>
+          </li>
+          <li>
+            <div class="homepage list-style-type-cus">
+              <span>5</span>
+            </div>
+            <p class="homepage list__p">
+              Kế toán không vững nghiệp vụ chuyên môn dẫn đến lỗ hổng "khổng lồ"
+              về thuế
+            </p>
+          </li>
+          <li>
+            <div class="homepage list-style-type-cus">
+              <span>6</span>
+            </div>
+            <p class="homepage list__p">
+              Hàng tồn kho không kiểm soát được, không cung cấp báo cáo kịp
+              thời?
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="homepage section section--3rd">
+      <h2 class="homepage section__h2">KHÓA HỌC KẾ TOÁN</h2>
+      <hr />
+      <div class="homepage slider slider-content1">
+        @foreach($courses_1 as $cate)
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a
+                href="{{route('courseIndex', $cate->id)}}"
+                class="homepage fcrse_img"
+              >
+                <img src="{{asset($cate->image)}}" alt="" />
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">
+                    {{number_format($cate->price_basic)}} VNĐ
+                  </div>
+                  <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
+                    -{{number_format($cate->virtual_Basic)}} VNĐ
+                  </div>
+                </div>
+                <div class="homepage makh">#KH {{$cate->id}}</div>
+              </a>
+
+              <div class="homepage fcrse_content">
+                <h3 class="homepage bl-title">
+                  <a href="{{route('courseIndex', $cate->id)}}"
+                    >{{$cate->name_course}}</a
+                  >
+                </h3>
+
+                <div class="homepage vdtodt">
+                  <ul>
+                    <li>
+                      <i class="homepage uil uil-eye"></i>{{$cate->viewers}}
+                      Views
+                    </li>
+                    <li>
+                      <i class="homepage uil uil-stopwatch"></i
+                      >{{$cate->count_lesson}} bài
+                    </li>
+                    <li>
+                      <i style="color: orange" class="homepage uil uil-star"></i
+                      >{{$cate->rating}} Reviews
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <h5><a href="" tabindex="-1">FC David</a></h5>
+                  </div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>Xem chi tiết
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @endforeach
+      </div>
+    </section>
+    <section class="homepage section image">
+      <img class="homepage image__hp18" src="./assets/img/hp18.png" alt="" />
+      <img class="homepage image__hp19" src="./assets/img/hp19.png" alt="" />
+    </section>
+    <!--<section class="homepage section image-2">-->
+    <!--    <img src="./assets/img/banner1.jpg" alt="" />-->
+    <!--</section>-->
+    <section class="homepage section section--4th">
+      <h2 class="homepage section__h2">PHÂN TÍCH TÀI CHÍNH</h2>
+      <hr />
+      <div class="homepage slider slider-content1">
+        @foreach($courses_1 as $cate)
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a
+                href="{{route('courseIndex', $cate->id)}}"
+                class="homepage fcrse_img"
+              >
+                <img src="{{asset($cate->image)}}" alt="" />
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">
+                    {{number_format($cate->price_basic)}} VNĐ
+                  </div>
+                  <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
+                    -{{number_format($cate->virtual_Basic)}} VNĐ
+                  </div>
+                </div>
+                <div class="homepage makh">#KH {{$cate->id}}</div>
+              </a>
+
+              <div class="homepage fcrse_content">
+                <h3 class="homepage bl-title">
+                  <a href="{{route('courseIndex', $cate->id)}}"
+                    >{{$cate->name_course}}</a
+                  >
+                </h3>
+
+                <div class="homepage vdtodt">
+                  <ul>
+                    <li>
+                      <i class="homepage uil uil-eye"></i>{{$cate->viewers}}
+                      Views
+                    </li>
+                    <li>
+                      <i class="homepage uil uil-stopwatch"></i
+                      >{{$cate->count_lesson}} bài
+                    </li>
+                    <li>
+                      <i style="color: orange" class="homepage uil uil-star"></i
+                      >{{$cate->rating}} Reviews
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <h5><a href="" tabindex="-1">FC David</a></h5>
+                  </div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>Xem chi tit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @endforeach
+      </div>
+    </section>
+    <section class="homepage section section--5th">
+      <div class="homepage section--5th-left">
+        <h1 class="homepage section__h2">
+          ĐỒNG HÀNH CÙNG +10.000 DOANH NGHIỆP
+        </h1>
+        <hr style="margin-left: 0" />
+        <p>
+          DAVID PC thiết lp những chuyên đ huấn luyn phù hp với tng loại hình
+          doanh nghiệp.
+        </p>
+        <div>
+          <button class="homepage section--5th-left__button">XEM THÊM</button>
+        </div>
+      </div>
+      <div class="homepage section--5th-right">
+        <img src="./assets/img/hp20.png" alt="" />
+        <img src="./assets/img/hp21.png" alt="" />
+        <img src="./assets/img/hp22.png" alt="" />
+        <img src="./assets/img/hp20.png" alt="" />
+        <img src="./assets/img/hp20.png" alt="" />
+        <img src="./assets/img/hp21.png" alt="" />
+        <img src="./assets/img/hp22.png" alt="" />
+        <img src="./assets/img/hp20.png" alt="" />
+        <img src="./assets/img/hp20.png" alt="" />
+        <img src="./assets/img/hp21.png" alt="" />
+        <img src="./assets/img/hp20.png" alt="" />
+        <img src="./assets/img/hp20.png" alt="" />
+        <img src="./assets/img/hp21.png" alt="" />
+      </div>
+    </section>
+    <!--<section class="homepage section image-2">-->
+    <!--    <img src="./assets/img/banner1.jpg" alt="" />-->
+    <!--</section>-->
+
+    <section class="homepage section section--6th">
+      <h2 class="homepage section__h2">ĐẦU TƯ VÀ KINH DOANH</h2>
+      <hr />
+      <div class="homepage slider slider-content4">
+        @foreach($courses_1 as $cate)
+        <div class="homepage owl-item active">
+          <div class="homepage item">
+            <div class="homepage fcrse_1">
+              <a href="" class="homepage fcrse_img">
+                <img src="{{asset($cate->image)}}" alt="" />
+                <div class="homepage prce142">
+                  <div style="font-weight: bold; color: #023160">
+                    {{number_format($cate->price_basic)}} VNĐ
+                  </div>
+                  <div style="font-size: 0.9rem; font-weight: 300; color: #ccc">
+                    -600.000Đ
+                  </div>
+                </div>
+                <div class="homepage makh">#KH {{$cate->id}}</div>
+              </a>
+
+              <div class="homepage fcrse_content">
+                <h3 class="homepage bl-title">
+                  <a href="">{{$cate->name_course}}</a>
+                </h3>
+
+                <div class="homepage vdtodt">
+                  <ul>
+                    <li>
+                      <i class="homepage uil uil-eye"></i>{{$cate->viewers}}
+                      Views
+                    </li>
+                    <li>
+                      <i class="homepage uil uil-stopwatch"></i
+                      >{{$cate->count_lesson}} bài
+                    </li>
+                    <li>
+                      <i style="color: orange" class="homepage uil uil-star"></i
+                      >{{$cate->rating}} Reviews
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="homepage auth1lnkprce">
+                  <div class="homepage education_block_author">
+                    <h5><a href="" tabindex="-1">FC David</a></h5>
+                  </div>
+                  <div class="homepage shrt-cart-btn">
+                    <i class="homepage"></i>Xem chi tiết
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @endforeach
+      </div>
+    </section>
+    <section class="homepage section section--7th">
+      <h2 class="homepage section__h2">KHÓA HỌC SẮP TỚI</h2>
+      <hr />
+      <div class="homepage video-container">
+        <div class="homepage video-bl video-left">
+          <div class="homepage video">
+            <a href=""
+              ><div class="homepage overlay"></div>
+              <img
+                src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="homepage video-bl video-right">
+          <div class="homepage video">
+            <a href=""
+              ><div class="homepage overlay"></div>
+              <img
+                src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="homepage video">
+            <a href=""
+              ><div class="homepage overlay"></div>
+              <img
+                src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="homepage video">
+            <a href=""
+              ><div class="homepage overlay"></div>
+              <img
+                src="https://edumall.thememove.com/wp-content/uploads/2020/11/btn-youtube-play.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--<section class="homepage section section--8th">-->
+    <!--    <h1 class="homepage section__h2">KHÁCH HÀNG FEEDBACK</h1>-->
+    <!--    <hr />-->
+    <!--    <div class="homepage slider slider-content6">-->
+    <!--        <div class="homepage comment-bl active">-->
+    <!--            <div class="homepage item">-->
+    <!--                <img src="./assets/img/ctkh5.png" alt="" />-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="homepage comment-bl active">-->
+    <!--            <div class="homepage item">-->
+    <!--                <img src="./assets/img/ctkh5.png" alt="" />-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="homepage comment-bl active">-->
+    <!--            <div class="homepage item">-->
+    <!--                <img src="./assets/img/ctkh5.png" alt="" />-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="homepage comment-bl active">-->
+    <!--            <div class="homepage item">-->
+    <!--                <img src="./assets/img/ctkh5.png" alt="" />-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--</section>-->
+
+    <section class="homepage section section--9th">
+      <h2 class="homepage section__h2">DOANH NGHIỆP CHÚNG TÔI</h2>
+      <hr />
+
+      <div class="homepage slider slider-content7">
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+        <div class="homepage comment-bl active">
+          <div class="homepage item">
+            <img src="./assets/img/ctkh6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    @include("layouts.footer") @include("layouts.jsloading")
+  </body>
+</html>

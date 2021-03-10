@@ -1524,7 +1524,7 @@ footer .row1 {
   margin-top: 16px;
   text-align: left;
 }
-footer .row1 h2 {
+footer .row1 h1 {
   margin-bottom: 16px;
   color: white;
   font-weight: 600;
@@ -1830,18 +1830,7 @@ body.homepage {
   background-color: #3b5b8c;
   padding: 5px 18px;
 }
-.homepage.list-style-type-cus div {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin: 0;
-  margin-left: -7px;
-  margin-top: 1px;
-  border-top: 5px solid transparent;
-  border-left: 10px solid #3b5b8c;
-  border-bottom: 5px solid transparent;
-  vertical-align: top;
-}
+
 .homepage.list .homepage.list__p {
   flex: 1;
   font-size: 14px;
@@ -2066,24 +2055,16 @@ a {
   display: flex;
   align-items: center;
 }
-.homepage.education_block_author .homepage.path-img {
-  max-width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
-  margin-right: 7px;
-}
-.homepage.img-fluid {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+
 .homepage.education_block_author h5 {
   margin: 0;
   font-size: 12px;
   font-weight: 600;
   opacity: 1;
+  color: #3b5b8c;
+  background-color: #aaccff;
+  padding: 8px 28px;
+  border-radius: 50px;
 }
 
 .homepage.shrt-cart-btn {
@@ -4599,7 +4580,7 @@ body.tcnvcd > *:not(#nav, footer) {
 
 /*#region THÔNG BÁO */
 .tcnvcd.tb {
-  padding: 16px;
+  padding: 20px;
 }
 /*#endregion THÔNG BÁO */
 
@@ -4635,7 +4616,7 @@ body.tcnvcd > *:not(#nav, footer) {
 /* #region SLIDER */
 
 .tcnvcd.sn .tcnvcd.slider {
-  padding-top: 16px;
+  padding-top: 20px;
 }
 
 .tcnvcd.sn .slick-slide {
@@ -4736,7 +4717,7 @@ body.tcnvcd > *:not(#nav, footer) {
   font-size: 0.8rem;
 }
 .tcnvcd.item h2 {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 700;
 }
 .tcnvcd.item > div:nth-child(2) {
@@ -4992,6 +4973,10 @@ body.tcnvcd > *:not(#nav, footer) {
   .tcnvcd.sn .slick-prev {
     left: 2%;
   }
+  .tcnvcd.item h2 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }
 @media only screen and (max-width: 760px) {
   .tcnvcd.ctn-sn {
@@ -5014,7 +4999,7 @@ body.tcnvcd > *:not(#nav, footer) {
     text-align: center;
   }
 
-  /* #endregion HỒ SƠ CÁ NHÂN */
+  /* #endregion H SƠ CÁ NHÂN */
   .tcnvcd.sn-4 span:nth-child(1) {
     left: 5%;
   }
