@@ -1,4 +1,4 @@
-$(".slider-content1").slick({
+$(".dkkh.slider-content1").slick({
   dots: true,
   infinite: false,
   speed: 300,

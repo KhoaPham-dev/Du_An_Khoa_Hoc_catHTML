@@ -33,7 +33,7 @@
   padding: 24px;
   text-align: center;
 }
-.dkkh.form-ctn form > h1 {
+.dkkh.form-ctn form > h2 {
   font-size: 1.7rem;
   color: white;
 }
@@ -182,7 +182,7 @@
 .dkkh.ctn-sn-1 .dkkh.sn-1--right > * {
   padding: 0.5em 0;
 }
-.dkkh.ctn-sn-1 .dkkh.sn-1--right > h1 {
+.dkkh.ctn-sn-1 .dkkh.sn-1--right > h2 {
   font-size: 1.7rem;
   color: #023160;
   margin: 0;

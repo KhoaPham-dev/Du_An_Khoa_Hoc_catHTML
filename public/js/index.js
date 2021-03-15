@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $("#default_click").click();
+});
+
 //#region NAV
 if (document.querySelectorAll("#nav").length > 0) {
   //animation
@@ -232,8 +236,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 8,
-    slidesToScroll: 8,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     // autoplay: true,
     // autoplaySpeed: 1800,
     responsive: [
@@ -307,7 +311,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Chuyển tab Mô tả - bình luận - đánh giá
+  //Chuyển tab Mô t - bình luận - đánh giá
   let btnsArr = document.querySelectorAll(".ctkh.ctn-sn-2 .mt-bl-dg .btns li");
   for (let i = 0; i < btnsArr.length; i++) {
     const ele = btnsArr[i];
@@ -323,7 +327,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Chuyển tab bài học - tình huống - luật mới - thảo luận
+  //Chuyển tab bài hc - tình huống - luật mi - thảo luận
   let ctrBtnsArr = document.querySelectorAll(".ctn-sn-2 .ctr .btns li");
   for (let i = 0; i < ctrBtnsArr.length; i++) {
     const ele = ctrBtnsArr[i];
@@ -339,7 +343,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Hiệu ứng khi chọn gói khóa học
+  //Hiệu ứng khi chọn gi khóa học
   let opsArr = document.querySelectorAll(".op a");
   for (let i = 0; i < opsArr.length; i++) {
     const ele = opsArr[i];
@@ -348,24 +352,42 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
         e.classList.remove("active");
       });
       e.currentTarget.classList.toggle("active");
+
+      // set price for title.
+      var main_price = e.currentTarget.getAttribute("data-price-type");
+      var virtual_price = e.currentTarget.getAttribute("data-virtual-type");
+      $("#main_price").html(main_price);
+      $("#virtual_price").html(virtual_price);
+
+      // url resolve here.
+      var url = "";
+      $("#btn-buy-payment").prop("href", "https://google.com.vn");
+
+      // not.
+
       document.getElementById("nof-not-choose").style.display = "none";
     });
   }
-  document.getElementById("btn-buy").addEventListener("click", function (e) {
-    if (!document.querySelector(".op a.active")) {
-      document.getElementById("nof-not-choose").style.display = "block";
-    }
-  });
+  if ($("#btn-buy").length > 0) {
+    document.getElementById("btn-buy").addEventListener("click", function (e) {
+      if (!document.querySelector(".op a.active")) {
+        document.getElementById("nof-not-choose").style.display = "block";
+      }
+    });
+  }
 
   //modal hiện lên lúc click bình luận nhưng chưa đăng nhập
-  let btnComment = document.getElementById("btn-comment");
-  btnComment.addEventListener("click", function () {
-    //if (!Auth){
-    document.getElementById("modal-comment").classList.toggle("active");
-    document.querySelector(".layer-modal").classList.toggle("active");
-    //}
-    //else{}
-  });
+
+  if ($("#btn-comment").length > 0) {
+    let btnComment = document.getElementById("btn-comment");
+    btnComment.addEventListener("click", function () {
+      //if (!Auth){
+      document.getElementById("modal-comment").classList.toggle("active");
+      document.querySelector(".layer-modal").classList.toggle("active");
+      //}
+      //else{}
+    });
+  }
 
   //Tắt modal bằng nút x
   let mdClose = document.getElementById("md-close");
@@ -394,9 +416,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -420,9 +441,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -446,9 +466,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -472,9 +491,8 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -815,3 +833,44 @@ if (document.querySelectorAll("body.tttdm").length > 0) {
   });
 }
 //#endregion TIN TUC THEO DANH MUC
+
+//#region DANG KY KHOA HOC
+if (document.querySelectorAll("body.dkkh").length > 0) {
+  //SLIDER
+  $(".dkkh.slider-content1").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+  //
+  let opsArr = document.querySelectorAll(".op a");
+  for (let i = 0; i < opsArr.length; i++) {
+    const ele = opsArr[i];
+    ele.addEventListener("click", function (e) {
+      opsArr.forEach((e) => {
+        e.classList.remove("active");
+      });
+      e.currentTarget.classList.toggle("active");
+      document.getElementById("nof-not-choose").style.display = "none";
+    });
+  }
+  document.getElementById("btn-buy").addEventListener("click", function (e) {
+    e.preventDefault();
+    if (!document.querySelector(".op a.active")) {
+      document.getElementById("nof-not-choose").style.display = "block";
+    } else {
+    }
+  });
+}
+//#endregion DANG KY KHOA HOC
