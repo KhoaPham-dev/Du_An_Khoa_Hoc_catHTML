@@ -1,5 +1,79 @@
 $(document).ready(function () {
-  $("#default_click").click();
+  let current_language = localStorage.getItem("language") || "VN";
+  $(".language input:checkbox").prop("checked", current_language == "EN");
+
+  let language = $.parseJSON(
+    $.ajax({
+      url: "https://admin.davidfc.vn/api/en",
+      async: false,
+    }).responseText
+  );
+  let languageHeader = $.parseJSON(
+    $.ajax({
+      url: "https://admin.davidfc.vn/api/header",
+      async: false,
+    }).responseText
+  );
+
+  //
+
+  // console.log(current_language);
+  //
+  $(".language input:checkbox").change(function () {
+    if ($(this).is(":checked")) {
+      current_language = "EN";
+    } else {
+      current_language = "VN";
+    }
+    updateLanguage();
+  });
+
+  updateLanguage();
+
+  function updateLanguage() {
+    localStorage.setItem("language", current_language);
+    // console.log(current_language);
+
+    $(`[data-language]`).each(function () {
+      let id = $(this).data("language");
+      let a = language.find((x) => x.id == id);
+      if (a) {
+        $(this).text(a[current_language == "VN" ? "vie_title" : "eng_title"]);
+      }
+    });
+
+    $(`[data-language-placeholder]`).each(function () {
+      let id = $(this).data("language-placeholder");
+      let a = language.find((x) => x.id == id);
+      if (a) {
+        $(this).attr(
+          "placeholder",
+          a[current_language == "VN" ? "vie_title" : "eng_title"]
+        );
+      }
+    });
+
+    $(`[data-language-header]`).each(function () {
+      let id = $(this).data("language-header");
+      let a = languageHeader.find((x) => x.id == id);
+      if (a) {
+        $(this).text(a[current_language == "VN" ? "title" : "title_eng"]);
+      }
+    });
+  }
+
+  $("#default_click").each(function () {
+    this.click();
+  });
+
+  function findAndReplace(source, replace) {
+    var text = "/" + source + "/g";
+    document.body.innerHTML = document.body.innerHTML.replace(text, replace);
+  }
+
+  function myFunction(p1, p2) {
+    return p1 * p2; // The function returns the product of p1 and p2
+  }
 });
 
 //#region NAV
@@ -52,13 +126,6 @@ if (document.querySelectorAll("footer.footer").length > 0) {
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
       {
         breakpoint: 480,
         settings: {
@@ -236,8 +303,8 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 8,
+    slidesToScroll: 8,
     // autoplay: true,
     // autoplaySpeed: 1800,
     responsive: [
@@ -311,7 +378,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Chuyển tab Mô t - bình luận - đánh giá
+  //Chuyển tab Mô tả - bình luận - đánh giá
   let btnsArr = document.querySelectorAll(".ctkh.ctn-sn-2 .mt-bl-dg .btns li");
   for (let i = 0; i < btnsArr.length; i++) {
     const ele = btnsArr[i];
@@ -327,7 +394,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Chuyển tab bài hc - tình huống - luật mi - thảo luận
+  //Chuyển tab bài hc - tình huống - luật mi - thảo lun
   let ctrBtnsArr = document.querySelectorAll(".ctn-sn-2 .ctr .btns li");
   for (let i = 0; i < ctrBtnsArr.length; i++) {
     const ele = ctrBtnsArr[i];
@@ -343,7 +410,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Hiệu ứng khi chọn gi khóa học
+  //Hiu ng khi chọn gói khóa học
   let opsArr = document.querySelectorAll(".op a");
   for (let i = 0; i < opsArr.length; i++) {
     const ele = opsArr[i];
@@ -360,8 +427,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
       $("#virtual_price").html(virtual_price);
 
       // url resolve here.
-      var url = "";
-      $("#btn-buy-payment").prop("href", "https://google.com.vn");
+      // $("#btn-buy-payment").prop("href", "https://google.com.vn");
 
       // not.
 
@@ -376,7 +442,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //modal hiện lên lúc click bình luận nhưng chưa đăng nhập
+  //modal hin lên lc click bình luận nhưng cha đăng nhập
 
   if ($("#btn-comment").length > 0) {
     let btnComment = document.getElementById("btn-comment");
@@ -389,7 +455,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Tắt modal bằng nút x
+  //Tt modal bng nút x
   let mdClose = document.getElementById("md-close");
   mdClose.addEventListener("click", function () {
     document.getElementById("modal-comment").classList.toggle("active");
@@ -586,9 +652,8 @@ if (document.querySelectorAll("body.tcnvcd").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -618,9 +683,8 @@ if (document.querySelectorAll("body.dstt").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -728,9 +792,8 @@ if (document.querySelectorAll("body.ttct").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -792,9 +855,8 @@ if (document.querySelectorAll("body.tttdm").length > 0) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
     ],
@@ -855,6 +917,7 @@ if (document.querySelectorAll("body.dkkh").length > 0) {
   });
   //
   let opsArr = document.querySelectorAll(".op a");
+  var package_input = 0;
   for (let i = 0; i < opsArr.length; i++) {
     const ele = opsArr[i];
     ele.addEventListener("click", function (e) {
@@ -862,9 +925,38 @@ if (document.querySelectorAll("body.dkkh").length > 0) {
         e.classList.remove("active");
       });
       e.currentTarget.classList.toggle("active");
+      var main_price = e.currentTarget.getAttribute("data-price-type");
+      var package = e.currentTarget.getAttribute("data-package-type");
+      package_input = package;
+      $("#main_price").html(main_price);
+
       document.getElementById("nof-not-choose").style.display = "none";
     });
   }
+
+  $("#btn-buy").click(function () {
+    // console.log(package_input);
+
+    let _token = $('meta[name="csrf-token"]').attr("content");
+
+    $.ajax({
+      url: route("confirmCourse"),
+      type: "POST",
+      data: {
+        package: package_input,
+        _token: _token,
+      },
+      success: function (response) {
+        // console.log(response);
+        if (response) {
+          // refresh browser.
+          var url = window.location.href;
+          window.location.href = url; //Will take you to alert box.
+        }
+      },
+    });
+  });
+
   document.getElementById("btn-buy").addEventListener("click", function (e) {
     e.preventDefault();
     if (!document.querySelector(".op a.active")) {
@@ -874,3 +966,114 @@ if (document.querySelectorAll("body.dkkh").length > 0) {
   });
 }
 //#endregion DANG KY KHOA HOC
+
+//#region KHOA HOC MEMBER
+if (document.querySelectorAll("body.khmb").length > 0) {
+  let btnsArr = document.querySelectorAll(".khmb.sn--right .tabs .tab");
+  for (let i = 0; i < btnsArr.length; i++) {
+    const ele = btnsArr[i];
+    ele.addEventListener("click", function (e) {
+      btnsArr.forEach((e) => {
+        e.classList.remove("active");
+      });
+      e.currentTarget.classList.toggle("active");
+      document.querySelectorAll(".khmb.tab-ct").forEach((e) => {
+        e.classList.remove("active");
+      });
+      document.querySelectorAll(".khmb.tab-ct")[i].classList.toggle("active");
+    });
+  }
+
+  document
+    .getElementById("btn-sidebar")
+    .addEventListener("click", function (e) {
+      document.querySelector(".khmb.sn.sn--right").classList.toggle("active");
+      document.getElementById("btn-sidebar").classList.toggle("active");
+    });
+
+  //Collapse
+  let lstSituation = document.querySelectorAll(".lst-ctr .situation .li");
+  for (let i = 0; i < lstSituation.length; i++) {
+    const ele = lstSituation[i];
+    ele.addEventListener("click", function (e) {
+      let currentTarget = e.target;
+      while (currentTarget.classList) {
+        if (currentTarget.classList.contains("chapter")) {
+          e.currentTarget.classList.toggle("active");
+          break;
+        }
+        currentTarget = currentTarget.parentNode;
+      }
+    });
+  }
+  //SLIDER
+  $(".slider-content1").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.05,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+  $(".slider-content2").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 815,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.05,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+}
+//#endregion KHOA HOC MEMBER
+
+//#region AN/HIEN NAV-TOP
+if ($("#nav .nav-top").length > 0) {
+  $("#nav .nav-top").addClass("hidden");
+  let current_position = $(window).scrollTop();
+  $(document).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < current_position) {
+      // Scrolling up
+      $("#nav .nav-top").removeClass("hidden");
+    } else {
+      // Scrolling down
+      $("#nav .nav-top").addClass("hidden");
+    }
+    current_position = scroll;
+  });
+}
+//#endregion AN/HIEN NAV-TOP
