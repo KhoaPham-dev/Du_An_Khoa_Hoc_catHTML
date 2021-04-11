@@ -1,5 +1,3 @@
-let a = $(window).height() - 130 - $("footer").height();
-$("body > section").css("min-height", a);
 $(document).ready(function () {
   let current_language = localStorage.getItem("language") || "VN";
   $(".language input:checkbox").prop("checked", current_language == "EN");
@@ -60,14 +58,6 @@ $(document).ready(function () {
       let a = languageHeader.find((x) => x.id == id);
       if (a) {
         $(this).text(a[current_language == "VN" ? "title" : "title_eng"]);
-      }
-    });
-
-    $(`[data-language-categories]`).each(function () {
-      if (current_language != "VN" && $(this).data("language-categories-eng")) {
-        $(this).text($(this).data("language-categories-eng"));
-      } else {
-        $(this).text($(this).data("language-categories"));
       }
     });
   }
@@ -313,10 +303,10 @@ if (document.querySelectorAll("body.homepage").length > 0) {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1800,
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    // autoplay: true,
+    // autoplaySpeed: 1800,
     responsive: [
       {
         breakpoint: 815,
@@ -388,7 +378,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Chuyển tab Mô tả - bình lun - nh giá
+  //Chuyển tab Mô tả - bình luận - đánh giá
   let btnsArr = document.querySelectorAll(".ctkh.ctn-sn-2 .mt-bl-dg .btns li");
   for (let i = 0; i < btnsArr.length; i++) {
     const ele = btnsArr[i];
@@ -404,7 +394,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Chuyển tab bài hc - tnh huống - luật mi - tho lun
+  //Chuyển tab bài hc - tình huống - luật mi - thảo lun
   let ctrBtnsArr = document.querySelectorAll(".ctn-sn-2 .ctr .btns li");
   for (let i = 0; i < ctrBtnsArr.length; i++) {
     const ele = ctrBtnsArr[i];
@@ -420,7 +410,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Hiu ng khi chọn gi khóa học
+  //Hiu ng khi chọn gói khóa học
   let opsArr = document.querySelectorAll(".op a");
   for (let i = 0; i < opsArr.length; i++) {
     const ele = opsArr[i];
@@ -452,7 +442,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //modal hin ln lc click bình luận nhưng cha đăng nhập
+  //modal hin lên lc click bình luận nhưng cha đăng nhập
 
   if ($("#btn-comment").length > 0) {
     let btnComment = document.getElementById("btn-comment");
@@ -465,7 +455,7 @@ if (document.querySelectorAll("body.ctkh").length > 0) {
     });
   }
 
-  //Tt modal bng nt x
+  //Tt modal bng nút x
   let mdClose = document.getElementById("md-close");
   mdClose.addEventListener("click", function () {
     document.getElementById("modal-comment").classList.toggle("active");
@@ -691,9 +681,9 @@ if (document.querySelectorAll("body.dstt").length > 0) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
         },
       },
@@ -712,8 +702,8 @@ if (document.querySelectorAll("body.dstt").length > 0) {
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 815,
@@ -725,56 +715,42 @@ if (document.querySelectorAll("body.dstt").length > 0) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
         },
       },
     ],
   });
-  if (window.screen.width <= 600) {
-    $(".bar-1").slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      responsive: [
-        {
-          breakpoint: 601,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-          },
-        },
-      ],
-    });
-  }
 }
 //#endregion DANH SACH TIN TUC
 
 //#region KHOA HOC
 if (document.querySelectorAll("body.khoahoc").length > 0) {
-  //SLIDER
-  if (window.screen.width <= 600) {
-    $(".bar-1").slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      responsive: [
-        {
-          breakpoint: 601,
-          settings: {
-            slidesToShow: 3.05,
-            slidesToScroll: 3,
-          },
-        },
-      ],
+  //Collapse content in sidebar
+  let barClArr = document.querySelectorAll(".khoahoc.bar-1 .bar-content ul li");
+  for (let i = 0; i < barClArr.length; i++) {
+    barClArr[i].addEventListener("click", function (e) {
+      e.currentTarget.lastElementChild.classList.toggle("active-list-wrapper");
+      e.currentTarget.firstElementChild.lastElementChild.classList.toggle(
+        "active-collaspe-btn-bar"
+      );
     });
   }
+
+  document.getElementById("expand-nav").addEventListener("click", function (e) {
+    e.target.classList.toggle("expand-nav-on");
+    document.getElementById("sidebar").classList.toggle("sidebar-active");
+  });
+
+  //SLIDER
   $(".khoahoc.slider-content1").slick({
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 815,
@@ -784,9 +760,9 @@ if (document.querySelectorAll("body.khoahoc").length > 0) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 480,
         settings: {
-          slidesToShow: 1.05,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -922,16 +898,6 @@ if (document.querySelectorAll("body.tttdm").length > 0) {
 
 //#region DANG KY KHOA HOC
 if (document.querySelectorAll("body.dkkh").length > 0) {
-  //SCROLL TO DIV AFTER PAGE LOAD
-  $(document).ready(function () {
-    // Handler for .ready() called.
-    $("html, body").animate(
-      {
-        scrollTop: $(".form-ctn").offset().top - 60,
-      },
-      "slow"
-    );
-  });
   //SLIDER
   $(".dkkh.slider-content1").slick({
     dots: true,
@@ -1094,61 +1060,13 @@ if (document.querySelectorAll("body.khmb").length > 0) {
 }
 //#endregion KHOA HOC MEMBER
 
-// #region LIEN HE
-if (document.querySelectorAll("body.lienhe").length > 0) {
-  $(".slider-content1").slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 815,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-}
-
-//#endregion LIEN HE
-
-//#region KHOA HOC OFFLINE
-if (document.querySelectorAll("body.khoff").length > 0) {
-  const btnDetailArr = document.querySelectorAll(
-    "td > button.khoff.btn.btn-primary"
-  );
-  btnDetailArr.forEach((b) => {
-    b.addEventListener("click", function (e) {
-      document.getElementById("ngaytochuc").value = b.dataset.date;
-      document.getElementById("hinhthuc").value = b.dataset.type;
-      document.getElementById("diadiem").value = b.dataset.location;
-      document.getElementById("giangvien").value = b.dataset.customertype;
-      document.getElementById("chitiet").innerText = b.dataset.description;
-      document.getElementById("giave").value = b.dataset.price;
-    });
-  });
-}
-
-//#endregion KHOA HOC OFFLINE
-
 //#region AN/HIEN NAV-TOP
 if ($("#nav .nav-top").length > 0) {
-  //$("#nav .nav-top").addClass("hidden");
+  $("#nav .nav-top").addClass("hidden");
   let current_position = $(window).scrollTop();
   $(document).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll <= current_position) {
+    if (scroll < current_position) {
       // Scrolling up
       $("#nav .nav-top").removeClass("hidden");
     } else {
@@ -1159,10 +1077,3 @@ if ($("#nav .nav-top").length > 0) {
   });
 }
 //#endregion AN/HIEN NAV-TOP
-
-$("[data-target-dropdown]").click(function (e) {
-  // e.preventDefault();
-  // let target = $(this).data("target-dropdown");
-  // $(target).toggleClass("show");
-  // $(`.hd-menu__li_dropdown:not(${target})`).removeClass("show");
-});
